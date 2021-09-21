@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choice Functions &#8212; Notes on Rational Choice Theory</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Utility" href="utility.html" />
+    <link rel="prev" title="Preferences" href="preferences.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Notes on Rational Choice Theory</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Overview
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="decision-theory.html">
+   Decision Theory
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="preferences.html">
+     Preferences
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Choice Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="utility.html">
+     Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lotteries-expected-utility.html">
+     Lotteries and Expected Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vnm.html">
+     von Neumann-Morgenstern Theorem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../mathematical-background/math-background.html">
+   Mathematical Background
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/sets.html">
+     Sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/relations.html">
+     Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/functions.html">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/decision-theory/choice.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practice-exercises">
+   Practice Exercises
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="choice-functions">
+<h1>Choice Functions<a class="headerlink" href="#choice-functions" title="Permalink to this headline">¶</a></h1>
+<p>In this section, we  introduce some notation to describe a decision maker’s choices. Suppose that  <span class="math notranslate nohighlight">\(X\)</span> is a finite set and    <span class="math notranslate nohighlight">\(\mathcal{P}(X)=\{Y\ |\ Y\ne\emptyset\text{ and } Y\subseteq X\}\)</span> is the set of non-empty subsets of <span class="math notranslate nohighlight">\(X\)</span>.    Elements of <span class="math notranslate nohighlight">\(\mathcal{P}(X)\)</span> are called  <strong>menus</strong>.   A choice function identifies the elements form a menu (i.e., a finite set of objects) that are “choice-worthy”.</p>
+<dl class="simple myst">
+<dt>Choice Function</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> is a finite set.   A  <strong>choice function</strong> on <span class="math notranslate nohighlight">\(X\)</span> is a function <span class="math notranslate nohighlight">\(C:\mathcal{P}(X)\rightarrow \mathcal{P}(X)\)</span> such that for all <span class="math notranslate nohighlight">\(S\in \mathcal{P}(X)\)</span>, <span class="math notranslate nohighlight">\(C(S)\subseteq S\)</span>.</p>
+</dd>
+</dl>
+<div class="admonition-actual-vs-hypothetical-choices admonition">
+<p class="admonition-title">Actual vs. Hypothetical Choices</p>
+<p>The mathematical formalism does not specify whether a choice function <span class="math notranslate nohighlight">\(C\)</span> represents a decision maker’s  <em>actual</em> or  <em>hypothetical</em> choice.  If it is the actual choices, then <span class="math notranslate nohighlight">\(C\)</span> is a record of the decision maker’s observed choice behavior.  If it is the hypothetical choices, then <span class="math notranslate nohighlight">\(C\)</span> represents what the decision maker  <em>would</em> chose if given the opportunity to select an element from a given menu.</p>
+</div>
+<p>Typically, it is assumed that the decision maker’s choices are guided by some underlying  preference relation (together with the decision maker’s beliefs).   The key idea is that is that a decision maker will choose an element of a menu <span class="math notranslate nohighlight">\(S\)</span> that is “best” according to her preference.  There are two ways to define the “best” element of a set with respect to some relation <span class="math notranslate nohighlight">\(B\)</span> on that set.   Suppose that <span class="math notranslate nohighlight">\(X\)</span> is a set, <span class="math notranslate nohighlight">\(B\subseteq X\times X\)</span> is a relation on <span class="math notranslate nohighlight">\(X\)</span>, and <span class="math notranslate nohighlight">\(S\subseteq X\)</span>.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(x\)</span> is a <strong>maximum</strong> element of <span class="math notranslate nohighlight">\(S\)</span> with respect to <span class="math notranslate nohighlight">\(B\)</span> provided that for all <span class="math notranslate nohighlight">\(y\in S\)</span>, <span class="math notranslate nohighlight">\(x\mathrel{B} y\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x\)</span> is a <strong>maximal</strong> element of <span class="math notranslate nohighlight">\(S\)</span> with respect to <span class="math notranslate nohighlight">\(B\)</span> provided that there is no <span class="math notranslate nohighlight">\(y\in S\)</span> such that <span class="math notranslate nohighlight">\(y \mathrel{B} x\)</span></p></li>
+</ol>
+<dl class="simple myst">
+<dt>Derived Choice Function</dt><dd><p>Let <span class="math notranslate nohighlight">\(R\)</span> be a relation on a finite set <span class="math notranslate nohighlight">\(X\)</span>.   The choice function derived from the relation <span class="math notranslate nohighlight">\(R\)</span> is <span class="math notranslate nohighlight">\(C_R:\mathcal{P}(X)\rightarrow\mathcal{P}(X)\)</span> is defined as follows: for all <span class="math notranslate nohighlight">\(S\in\mathcal{P}(X)\)</span>,</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[
+C_R(S)=\{y\ |\ \text{$y\in S$ and there is no $x\in S$ such that $x\mathrel{R} y$}\}
+\]</div>
+<p>That is, for a relation <span class="math notranslate nohighlight">\(R\)</span> on <span class="math notranslate nohighlight">\(X\)</span>, the derived choice function <span class="math notranslate nohighlight">\(C_R\)</span> selects the maximal elements of <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<p>The above definition can be applied to <em>any</em> relation on a set <span class="math notranslate nohighlight">\(X\)</span>.  In general, given an arbitrary relation <span class="math notranslate nohighlight">\(R\)</span> on <span class="math notranslate nohighlight">\(X\)</span>, <span class="math notranslate nohighlight">\(C_R\)</span> many not necessarily be a  <em>choice</em> function.   This would happen when there is a finite subset <span class="math notranslate nohighlight">\(Y\subseteq X\)</span> such that <span class="math notranslate nohighlight">\(C_R(Y)=\emptyset\)</span>.  The following Lemma states precisely when a function derived from a relation is a choice function.</p>
+<div class="observation admonition">
+<p class="admonition-title">Lemma 1</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> is finite.  A binary relation <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is acyclic if and only if <span class="math notranslate nohighlight">\(C_R\)</span> is a choice function.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Show proof.</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is acyclic.  By definition, for any nonempty set <span class="math notranslate nohighlight">\(S\in \mathcal{P}(X)\)</span>, <span class="math notranslate nohighlight">\(C_R(S)\subseteq S\)</span>.   We must show <span class="math notranslate nohighlight">\(C_R(S)\ne \emptyset\)</span>.   Suppose that <span class="math notranslate nohighlight">\(C_R(S)=\emptyset\)</span>.    Choose an element <span class="math notranslate nohighlight">\(x_0\in S\)</span>.  Since <span class="math notranslate nohighlight">\(C_R(S)=\emptyset\)</span>, there is an element <span class="math notranslate nohighlight">\(x_1\in S\)</span> such that <span class="math notranslate nohighlight">\(x_1\mathrel{R} x\)</span>.   Again, since <span class="math notranslate nohighlight">\(C_R(S)=\emptyset\)</span> there must be some element <span class="math notranslate nohighlight">\(x_2\in S\)</span> such that <span class="math notranslate nohighlight">\(x_2\mathrel{R} x_1\)</span>.   Since <span class="math notranslate nohighlight">\(R\)</span> is acyclic, we must have <span class="math notranslate nohighlight">\(x_2\ne x\)</span> (otherwise,  <span class="math notranslate nohighlight">\(x\mathrel{R} x_1\mathrel{R} x\)</span> is a cycle).  Continue in this manner selecting elements of <span class="math notranslate nohighlight">\(S\)</span>.  Since <span class="math notranslate nohighlight">\(S\)</span> is finite, eventually all elements of <span class="math notranslate nohighlight">\(S\)</span> are selected.   That is, we have <span class="math notranslate nohighlight">\(S=\{x_0,x_1,x_2,\ldots, x_n\}\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[
+x_n\mathrel{R} x_{n-1}\mathrel{R}\cdots x_2\mathrel{R} x_1\mathrel{R} x_0
+\]</div>
+<p>Since <span class="math notranslate nohighlight">\(c_R(S)=\emptyset\)</span> there must be some element <span class="math notranslate nohighlight">\(x\in S\)</span> such that <span class="math notranslate nohighlight">\(x\mathrel{R} x_n\)</span>.  Thus, <span class="math notranslate nohighlight">\(x=x_i\)</span> for some <span class="math notranslate nohighlight">\(i=0,\ldots, n\)</span>, which implies <span class="math notranslate nohighlight">\(R\)</span> has a cycle.   This contradicts the assumption that <span class="math notranslate nohighlight">\(C_R(S)=\emptyset\)</span>.  Hence <span class="math notranslate nohighlight">\(C_R(S)\ne\emptyset\)</span>.</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(C_R\)</span> is a choice function.   This means that for all <span class="math notranslate nohighlight">\(S\in\mathcal{P}(X)\)</span>, <span class="math notranslate nohighlight">\(C_R(S)\ne\emptyset\)</span>.    Suppose that <span class="math notranslate nohighlight">\(R\)</span> is not acyclic.  Then, there is a set of distinct elements <span class="math notranslate nohighlight">\(x_1,x_2,\ldots, x_n\in S\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[
+x_1\mathrel{R} x_2\mathrel{R}\cdots x_{n-1}\mathrel{R} x_n\mathrel{R} x_1.
+\]</div>
+<p>But this  means that <span class="math notranslate nohighlight">\(C_R(\{x_1,\ldots, x_n\})=\emptyset\)</span>. (The above cycle means that there is no maximal element of <span class="math notranslate nohighlight">\(\{x_1,\ldots, x_n\}\)</span>.)  This contradicts the assumption that <span class="math notranslate nohighlight">\(C_R\)</span> is a choice function.   Thus, <span class="math notranslate nohighlight">\(R\)</span> is acyclic.</p>
+</div>
+<p>An immediate corollary is that if <span class="math notranslate nohighlight">\((P, I)\)</span> is a rational preference  on <span class="math notranslate nohighlight">\(X\)</span>, then <span class="math notranslate nohighlight">\(C_P\)</span> is a choice function.</p>
+<dl class="simple myst">
+<dt>Rationalizable Choice Functions</dt><dd><p>A choice function <span class="math notranslate nohighlight">\(C:\mathcal{P}(X)\rightarrow \mathcal{P}(X)\)</span> is  <strong>rationalizable</strong> if there is a rational preference  <span class="math notranslate nohighlight">\((P, I)\)</span> on <span class="math notranslate nohighlight">\(X\)</span> such that <span class="math notranslate nohighlight">\(C=C_P\)</span>.</p>
+</dd>
+</dl>
+<p>Not every choice function is rationalizable (you are asked to find one in the exercises).   There are two key properties that completely characterize rationalizable choice functions. Suppose that <span class="math notranslate nohighlight">\(C\)</span> is a choice function on <span class="math notranslate nohighlight">\(X\)</span>.  We say that <span class="math notranslate nohighlight">\(C\)</span> satisfies:</p>
+<ol class="simple">
+<li><p><strong>Sen’s property</strong> <span class="math notranslate nohighlight">\(\mathbf{\alpha}\)</span> provided that  for all <span class="math notranslate nohighlight">\(A, B\subseteq X\)</span>, for all <span class="math notranslate nohighlight">\(x\in X\)</span>,  if <span class="math notranslate nohighlight">\(x\in B\subseteq A\)</span> and <span class="math notranslate nohighlight">\(x\in C(A)\)</span>, then <span class="math notranslate nohighlight">\(x\in C(B)\)</span></p></li>
+<li><p><strong>Sen’s property</strong>  <span class="math notranslate nohighlight">\(\mathbf{\beta}\)</span> provided that for all <span class="math notranslate nohighlight">\(A, B, \subseteq X\)</span>, for all <span class="math notranslate nohighlight">\(x,y\in X\)</span> if <span class="math notranslate nohighlight">\(x,y\in C(A)\)</span>, <span class="math notranslate nohighlight">\(A\subseteq B\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span>, then <span class="math notranslate nohighlight">\(x\in C(B)\)</span>.</p></li>
+</ol>
+<p>The first result is that Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> are together equivalent to a single axiom knowns as the <em>weak axiom of revealed preference</em> (WARP).   Suppose that <span class="math notranslate nohighlight">\(C\)</span> is a choice function on <span class="math notranslate nohighlight">\(X\)</span>.  We say that <span class="math notranslate nohighlight">\(C\)</span> satisfies:</p>
+<ol class="simple">
+<li><p><strong>Weak Axiom of Revealed Preference</strong> (also known as WARP or Houthakker’s Axiom) (WARP)} provided that for all <span class="math notranslate nohighlight">\(A, B, \subseteq X\)</span>, for all <span class="math notranslate nohighlight">\(x,y\in X\)</span>,  if <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are both contained in <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> and if <span class="math notranslate nohighlight">\(x\in C(A)\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span> then <span class="math notranslate nohighlight">\(x\in C(B)\)</span>.</p></li>
+</ol>
+<div class="observation admonition">
+<p class="admonition-title">Lemma 2</p>
+<p>A choice function <span class="math notranslate nohighlight">\(C\)</span> satisfies WARP if and only if <span class="math notranslate nohighlight">\(C\)</span> satisfies Sen’s properties <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Show proof.</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(C\)</span> satisfies WARP.    We must show <span class="math notranslate nohighlight">\(C\)</span> satisfies Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(C\)</span> satisfies  Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>: Suppose that <span class="math notranslate nohighlight">\(x\in X\)</span> with  <span class="math notranslate nohighlight">\(x\in B\subseteq A\subseteq X\)</span> and <span class="math notranslate nohighlight">\(x\in C(A)\)</span>.     Suppose that <span class="math notranslate nohighlight">\(x\not\in C(B)\)</span>.   Then there is some <span class="math notranslate nohighlight">\(y\in B\)</span> such that <span class="math notranslate nohighlight">\(y\in C(B)\)</span> and <span class="math notranslate nohighlight">\(y\ne x\)</span>. Since <span class="math notranslate nohighlight">\(y\in B\)</span> and <span class="math notranslate nohighlight">\(B\subseteq A\)</span>, we have <span class="math notranslate nohighlight">\(y\in A\)</span>.   Hence, <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are in both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.   By the WARP axiom, since <span class="math notranslate nohighlight">\(x\in C(A)\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span>, we must have <span class="math notranslate nohighlight">\(x\in C(B)\)</span>.    This contradicts the assumption that <span class="math notranslate nohighlight">\(x\not\in C(B)\)</span>.     Thus, <span class="math notranslate nohighlight">\(x\in c(B)\)</span>, as desired.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C\)</span> satisfies  Sen’s <span class="math notranslate nohighlight">\(\beta\)</span>: Suppose that <span class="math notranslate nohighlight">\(x,y\in X\)</span> with <span class="math notranslate nohighlight">\(x,y\in C(A)\)</span>, <span class="math notranslate nohighlight">\(A\subseteq B\subseteq X\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span>.  Since <span class="math notranslate nohighlight">\(C(A)\subseteq A\)</span>, we have <span class="math notranslate nohighlight">\(x, y\in A\)</span>; and since <span class="math notranslate nohighlight">\(A\subseteq B\)</span>, we have <span class="math notranslate nohighlight">\(x, y\in B\)</span>.   Thus, <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are in both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.  By the WARP axiom, since <span class="math notranslate nohighlight">\(x\in C(A)\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span>, we must have <span class="math notranslate nohighlight">\(x\in C(B)\)</span>, as desired.</p></li>
+</ul>
+<p>Now, suppose that <span class="math notranslate nohighlight">\(C\)</span> satisfies Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>.   We must show that <span class="math notranslate nohighlight">\(C\)</span> satisfies WARP. Suppose that     <span class="math notranslate nohighlight">\(x,y\in A\cap B\)</span>,  <span class="math notranslate nohighlight">\(x\in C(A)\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span>.   We must show that <span class="math notranslate nohighlight">\(x\in C(B)\)</span>.   Since, <span class="math notranslate nohighlight">\(A\cap B\subseteq B\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span>, by Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(y\in C(A\cap B)\)</span>.  Similarly, since <span class="math notranslate nohighlight">\(A\cap B\subseteq A\)</span> and <span class="math notranslate nohighlight">\(x\in C(A)\)</span>, by Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(x\in C(A\cap B)\)</span>.  Finally, Since <span class="math notranslate nohighlight">\(x, y\in C(A\cap B)\)</span>, <span class="math notranslate nohighlight">\(A\cap B\subseteq B\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span>, by Sen’s <span class="math notranslate nohighlight">\(\beta\)</span>, we have that <span class="math notranslate nohighlight">\(x\in C(B)\)</span>, as desired.</p>
+</div>
+<p>The main result of this section is the revelation theorem showing that WARP is equivalent to rationalizability.</p>
+<div class="observation admonition">
+<p class="admonition-title">Theorem</p>
+<p><span class="math notranslate nohighlight">\(C\)</span> satisfies WARP if and only if <span class="math notranslate nohighlight">\(C\)</span> is rationalizable.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Show proof.</p>
+<p>Suppose <span class="math notranslate nohighlight">\(C\)</span> is a choice function on <span class="math notranslate nohighlight">\(X\)</span>, and that <span class="math notranslate nohighlight">\(C\)</span> is rationalizable.  Then there is a rational preference  <span class="math notranslate nohighlight">\((P, I)\)</span> such that <span class="math notranslate nohighlight">\(C=C_P\)</span>.   We must show that <span class="math notranslate nohighlight">\(C\)</span> satisfies WARP.   Suppose that <span class="math notranslate nohighlight">\(A, B\subseteq X\)</span> and <span class="math notranslate nohighlight">\(x,y\in A\cap B\)</span>,  <span class="math notranslate nohighlight">\(x\in C(A)\)</span> and <span class="math notranslate nohighlight">\(y\in C(B)\)</span>.   We must show that <span class="math notranslate nohighlight">\(x\in C(B)\)</span>.   Since <span class="math notranslate nohighlight">\(C=C_P\)</span>, we have that <span class="math notranslate nohighlight">\(x\)</span> is a maximal element in <span class="math notranslate nohighlight">\(A\)</span> with respect to <span class="math notranslate nohighlight">\(P\)</span> and that <span class="math notranslate nohighlight">\(y\)</span> is a maximal element in <span class="math notranslate nohighlight">\(B\)</span> with respect to <span class="math notranslate nohighlight">\(P\)</span>.    This means that there is no <span class="math notranslate nohighlight">\(z\in A\)</span> such that <span class="math notranslate nohighlight">\(z P x\)</span> and there is no <span class="math notranslate nohighlight">\(z\in B\)</span> such that <span class="math notranslate nohighlight">\(z P y\)</span>.    Suppose that <span class="math notranslate nohighlight">\(w\in B\)</span>.   We will show that not-<span class="math notranslate nohighlight">\(w P x\)</span>.    Since <span class="math notranslate nohighlight">\(w\in B\)</span> and <span class="math notranslate nohighlight">\(y\)</span> is maximal in <span class="math notranslate nohighlight">\(B\)</span> with respect to <span class="math notranslate nohighlight">\(P\)</span>, we have that not-<span class="math notranslate nohighlight">\(w P y\)</span>.   Since <span class="math notranslate nohighlight">\((P, I)\)</span> is complete, this means that <span class="math notranslate nohighlight">\(y P w\)</span> or <span class="math notranslate nohighlight">\(y I w\)</span> (i.e, <span class="math notranslate nohighlight">\(y R_P w\)</span>).   Furthermore, since <span class="math notranslate nohighlight">\(y\in A\)</span> and <span class="math notranslate nohighlight">\(x\)</span> is maximal in <span class="math notranslate nohighlight">\(A\)</span> with respect to <span class="math notranslate nohighlight">\(P\)</span>, we have that not-<span class="math notranslate nohighlight">\(y P x\)</span>.   Since <span class="math notranslate nohighlight">\((P, I)\)</span> is complete, this means that either <span class="math notranslate nohighlight">\(x P y\)</span> or <span class="math notranslate nohighlight">\(x I y\)</span> (i.e., <span class="math notranslate nohighlight">\(x R_P y\)</span>).  Since <span class="math notranslate nohighlight">\(R_P\)</span> is transitive and  <span class="math notranslate nohighlight">\(x \mathrel{R_P} y\)</span> and <span class="math notranslate nohighlight">\(y \mathrel{R_P} w\)</span>,  we have that <span class="math notranslate nohighlight">\(x \mathrel{R_P} w\)</span>.   This implies that not-<span class="math notranslate nohighlight">\(wPx\)</span>.  That is, <span class="math notranslate nohighlight">\(x\)</span> is maximal in <span class="math notranslate nohighlight">\(B\)</span> with respect to <span class="math notranslate nohighlight">\(P\)</span>, i.e., <span class="math notranslate nohighlight">\(x\in C(B)\)</span>.</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(C\)</span> satisfies WARP.   Then by Lemma 2, <span class="math notranslate nohighlight">\(C\)</span> satisfies Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>.  Define a relation <span class="math notranslate nohighlight">\(R_C\subseteq X\times X\)</span> as follows: for all <span class="math notranslate nohighlight">\(x,y\in X\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+x\mathrel{R_C} y \text{ if and only if } x\in C(\{x,y\})
+\]</div>
+<p>We must show that 1. <span class="math notranslate nohighlight">\(R_C\)</span> is a rational weak preference relation and 2. for all <span class="math notranslate nohighlight">\(S\in\mathcal{P}(X)\)</span>, <span class="math notranslate nohighlight">\(C(S)=C_{P_C}(S)\)</span>, where <span class="math notranslate nohighlight">\(P_C\)</span> is the strict preference relation derived from <span class="math notranslate nohighlight">\(R_C\)</span>.   To see that 1. holds:</p>
+<p><span class="math notranslate nohighlight">\(R_C\)</span> is connected:   For any <span class="math notranslate nohighlight">\(x,y\in X\)</span>, since <span class="math notranslate nohighlight">\(C(\{x,y\})\)</span> is non-empty we have that  <span class="math notranslate nohighlight">\(C(\{x,y\})=\{x\}\)</span>, <span class="math notranslate nohighlight">\(C(\{x,y\})=\{y\}\)</span> or <span class="math notranslate nohighlight">\(C(\{x,y\})=\{x,y\}\)</span>.  Thus, either <span class="math notranslate nohighlight">\(x \mathrel{R_C} y\)</span> or <span class="math notranslate nohighlight">\(y \mathrel{R_C} x\)</span> (or both).</p>
+<p><span class="math notranslate nohighlight">\(R_C\)</span> is transitive: Suppose that <span class="math notranslate nohighlight">\(x \mathrel{R_C} y\)</span> and <span class="math notranslate nohighlight">\(y  \mathrel{R_C} z\)</span>.   Then,  <span class="math notranslate nohighlight">\(x\in C(\{x,y\})\)</span> and <span class="math notranslate nohighlight">\(y\in C(\{y, z\})\)</span>.   We  must show that <span class="math notranslate nohighlight">\(x\mathrel{R_C} z\)</span>; that is,  <span class="math notranslate nohighlight">\(x\in C(\{x,z\})\)</span>.    By Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>, if <span class="math notranslate nohighlight">\(x\in C(\{x,y,z\})\)</span>, then <span class="math notranslate nohighlight">\(x\in C(\{x,z\})\)</span>.  Thus, if we show that <span class="math notranslate nohighlight">\(x\in C(\{x,y,z\})\)</span>, then we are done.   There are three cases:</p>
+<ol class="simple">
+<li><p>Suppose that <span class="math notranslate nohighlight">\(C(\{x,y,z\})=\{y\}\)</span>.  By Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>, since <span class="math notranslate nohighlight">\(\{x,y\}\subseteq \{x,y,z\}\)</span> and <span class="math notranslate nohighlight">\(y\in C(\{x,y,z\})\)</span> we must have <span class="math notranslate nohighlight">\(y\in C(\{x,y\})\)</span>.   Thus, <span class="math notranslate nohighlight">\(C(\{x,y\})=\{x,y\}\)</span>.  By Sen’s <span class="math notranslate nohighlight">\(\beta\)</span>, this implies that <span class="math notranslate nohighlight">\(x\in C(\{x,y,z\})\)</span> (this follows since <span class="math notranslate nohighlight">\(\{x,y\}\subseteq \{x,y,z\}\)</span>, <span class="math notranslate nohighlight">\(x,y\in C(\{x,y\})\)</span> and <span class="math notranslate nohighlight">\(y\in C(\{x,y,z\})\)</span>).   This contradicts the assumption that <span class="math notranslate nohighlight">\(C(\{x,y,z\})=\{y\}\)</span>.   Thus, <span class="math notranslate nohighlight">\(C(\{x,y,z\}\ne\{y\}\)</span>.</p></li>
+<li><p>A similar argument shows that <span class="math notranslate nohighlight">\(C(\{x,y,z\})\ne\{z\}\)</span>.</p></li>
+<li><p>Suppose that <span class="math notranslate nohighlight">\(C(\{x,y,z\})=\{y,z\}\)</span>.  Then, <span class="math notranslate nohighlight">\(y\in C(\{x,y,z\})\)</span>, and, as above, by Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>, we have <span class="math notranslate nohighlight">\(C(\{x,y\})=\{x,y\}\)</span>.   This implies, by Sen’s <span class="math notranslate nohighlight">\(\beta\)</span>, that <span class="math notranslate nohighlight">\(x\in C(\{x,y,z\})\)</span>, which contradicts that assumption that <span class="math notranslate nohighlight">\(C(\{x,y,z\})=\{y,z\}\)</span>.</p></li>
+</ol>
+<p>Hence, <span class="math notranslate nohighlight">\(x\in C(\{x,y,z\}\)</span>.   By Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>, since <span class="math notranslate nohighlight">\(\{x,z\}\subseteq \{x,y,z\}\)</span>,  we have <span class="math notranslate nohighlight">\(x\in C(\{x,z\})\)</span>.   That is, <span class="math notranslate nohighlight">\(x\mathrel{R_C} z\)</span>.   This completes the proof that <span class="math notranslate nohighlight">\(R_C\)</span> is transitive.</p>
+<p>Let <span class="math notranslate nohighlight">\(P_C\)</span>   be the strict preference  relation derived from <span class="math notranslate nohighlight">\(R_C\)</span>.  Suppose that <span class="math notranslate nohighlight">\(S\in\mathcal{P}(X)\)</span>.   First of all, if <span class="math notranslate nohighlight">\(S\)</span> is a singleton (i.e., <span class="math notranslate nohighlight">\(S=\{x\}\)</span> for some <span class="math notranslate nohighlight">\(x\in X\)</span>), then by definition <span class="math notranslate nohighlight">\(C(S)=S=C_{P_C}(S)\)</span>.   Thus, in what follows we assume that <span class="math notranslate nohighlight">\(S\)</span> has at least two elements.    We must show that <span class="math notranslate nohighlight">\(C(S)=C_{P_C}(S)\)</span>.  We first show that <span class="math notranslate nohighlight">\(C(S)\subseteq C_{P_C}(S)\)</span>.  Suppose that  <span class="math notranslate nohighlight">\(x\in C(S)\)</span>.  We must show that <span class="math notranslate nohighlight">\(x\in C_{P_C}(S)\)</span>.  Let <span class="math notranslate nohighlight">\(y\in S\)</span>.  We must show that not-<span class="math notranslate nohighlight">\(y \mathrel{P_C} x\)</span>.   Since <span class="math notranslate nohighlight">\(R_C\)</span> is connected, this is equivalent to showing that <span class="math notranslate nohighlight">\(x\mathrel{R_C} y\)</span>.  Since <span class="math notranslate nohighlight">\(\{x,y\}\subseteq S\)</span> and <span class="math notranslate nohighlight">\(x\in C(S)\)</span>, by Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>, we have <span class="math notranslate nohighlight">\(x\in C(\{x,y\})\)</span>.   Thus, <span class="math notranslate nohighlight">\(x\mathrel{R_C} y\)</span>; and so, not-<span class="math notranslate nohighlight">\(y\mathrel{P_C} x\)</span>, which implies that <span class="math notranslate nohighlight">\(x\in C_{P_C}(S)\)</span>.  Next, we show that <span class="math notranslate nohighlight">\(C_{P_C}(S)\subseteq C(S)\)</span>. Suppose that <span class="math notranslate nohighlight">\(x\in C_{P_C}(S)\)</span>.  Suppose that <span class="math notranslate nohighlight">\(x\not\in C(S)\)</span>.  Then there is some <span class="math notranslate nohighlight">\(y\ne x\)</span> such that <span class="math notranslate nohighlight">\(y\in C(S)\)</span>.  By Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>, this implies that <span class="math notranslate nohighlight">\(y\in C(\{x,y\})\)</span>.  Furthermore, if <span class="math notranslate nohighlight">\(C(\{x,y\})=\{x,y\}\)</span>, then, by Sen’s <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(x\in C(S)\)</span>.   This contradicts the assumption that <span class="math notranslate nohighlight">\(x\not\in C(S)\)</span>.   Thus, <span class="math notranslate nohighlight">\(C(\{x,y\})=\{y\}\)</span>.  By definition, this means that <span class="math notranslate nohighlight">\(y\mathrel{R_C} x\)</span> but not-<span class="math notranslate nohighlight">\(x \mathrel{R_C} y\)</span>; i.e., <span class="math notranslate nohighlight">\(y P_C x\)</span>.    This contradicts the assumption that <span class="math notranslate nohighlight">\(x\in C_{P_C}(S)\)</span>.  Thus, <span class="math notranslate nohighlight">\(x\in C(S)\)</span>, as desired.</p>
+</div>
+<div class="section" id="practice-exercises">
+<h2>Practice Exercises<a class="headerlink" href="#practice-exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Give an example of a choice function that is not rationalizable.</p></li>
+<li><p>Give an example of a choice function satisfying Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span> but not Sen’s <span class="math notranslate nohighlight">\(\beta\)</span>.</p></li>
+<li><p>Give an example of a choice function satisfying Sen’s <span class="math notranslate nohighlight">\(\beta\)</span> but not Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span>.</p></li>
+<li><p>Give and example of a choice function that does not satisfy Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span> and does not satisfy Sen’s <span class="math notranslate nohighlight">\(\beta\)</span>.</p></li>
+<li><p>Give and example of a choice function satisfying both Sen’s <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>.</p></li>
+<li><p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> is a finite set and <span class="math notranslate nohighlight">\(C:\mathcal{P}(X)\rightarrow\mathcal{P}(X)\)</span> is a choice function.     Consider the following two alternative ways to define a preference ordering from the choice function <span class="math notranslate nohighlight">\(C\)</span>:</p></li>
+<li><p>For all <span class="math notranslate nohighlight">\(x,y\in X\)</span>, <span class="math notranslate nohighlight">\(x \mathrel{R_C^1} y\)</span> if and only if there is a set <span class="math notranslate nohighlight">\(S\in \mathcal{P}(X)\)</span> such that <span class="math notranslate nohighlight">\(x,y\in S\)</span> and <span class="math notranslate nohighlight">\(x\in c(S)\)</span>.</p></li>
+<li><p>For all <span class="math notranslate nohighlight">\(x,y\in X\)</span>,  <span class="math notranslate nohighlight">\(x\mathrel{P_C^2} y\)</span> if and only if  <span class="math notranslate nohighlight">\(\{x\}= C(\{x,y\})\)</span> and  <span class="math notranslate nohighlight">\(x\mathrel{I_C^2} y\)</span> if and only if <span class="math notranslate nohighlight">\(C(\{x,y\})=\{x,y\}\)</span>.   Then, define <span class="math notranslate nohighlight">\(x \mathrel{R_C^2} y\)</span> if and only if <span class="math notranslate nohighlight">\(x\mathrel{P_C^2} y\)</span> or <span class="math notranslate nohighlight">\(x\mathrel{I_C^2} y\)</span>.  Then, prove that if <span class="math notranslate nohighlight">\(C\)</span> satisfies WARP, then for all <span class="math notranslate nohighlight">\(x,y\in X\)</span>, the following are equivalent:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(x \mathrel{R_C} y\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x\mathrel{R_C^1} y\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x\mathrel{R_C^2}  y\)</span></p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./decision-theory"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="preferences.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Preferences</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="utility.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Utility</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eric Pacuit<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

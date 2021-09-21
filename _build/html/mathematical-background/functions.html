@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions &#8212; Notes on Rational Choice Theory</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Relations" href="relations.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Notes on Rational Choice Theory</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Overview
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../decision-theory/decision-theory.html">
+   Decision Theory
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/preferences.html">
+     Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/choice.html">
+     Choice Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/utility.html">
+     Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/lotteries-expected-utility.html">
+     Lotteries and Expected Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/vnm.html">
+     von Neumann-Morgenstern Theorem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="math-background.html">
+   Mathematical Background
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="sets.html">
+     Sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="relations.html">
+     Relations
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/mathematical-background/functions.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<p>A <strong>function</strong> from a set <span class="math notranslate nohighlight">\(A\)</span> to a set <span class="math notranslate nohighlight">\(B\)</span> is a way of associating elements of <span class="math notranslate nohighlight">\(A\)</span> with elements of <span class="math notranslate nohighlight">\(B\)</span>.  Formally, a function is a  special type of relation:</p>
+<dl class="simple myst">
+<dt>Function</dt><dd><p>A function <span class="math notranslate nohighlight">\(f\)</span> from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> is a binary relation on <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> (i.e., <span class="math notranslate nohighlight">\(f\subseteq A\times B\)</span>) such that for all <span class="math notranslate nohighlight">\(a\in A\)</span>, there exists a <em>unique</em> <span class="math notranslate nohighlight">\(b\in B\)</span> such that <span class="math notranslate nohighlight">\((a,b)\in f\)</span>.
+We  write <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> when <span class="math notranslate nohighlight">\(f\)</span> is a function, and if <span class="math notranslate nohighlight">\((a,b)\in f\)</span>, then write <span class="math notranslate nohighlight">\(f(a)=b\)</span>.</p>
+</dd>
+</dl>
+<p>Suppose that <span class="math notranslate nohighlight">\(A=\{1, 2, 3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{a,b\}\)</span>.  Examples of relations that are functions include:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(f_1=\{(1,a), (2,a), (3,b)\}\)</span>.   We write <span class="math notranslate nohighlight">\(f_1(1)=a, f_1(2)=a\)</span>, and <span class="math notranslate nohighlight">\(f_1(3)=b\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f_2=\{(1,a), (2,a), (3,a)\}\)</span>.   We write <span class="math notranslate nohighlight">\(f_2(1)=a, f_2(2)=a\)</span>, and <span class="math notranslate nohighlight">\(f_2(3)=a\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f_3=\{(1,a),  (3,b)\}\)</span>.  We write <span class="math notranslate nohighlight">\(f_3(1)=a\)</span> and <span class="math notranslate nohighlight">\(f_3(3)=b\)</span></p></li>
+</ol>
+<p>An example of a  relation that is not a function is <span class="math notranslate nohighlight">\(R=\{(1,a), (1,b), (3,b)\}\)</span>.</p>
+<p>When using functions, we will often use the  following terminology and notation.</p>
+<dl class="simple myst">
+<dt>Domain/Codomain</dt><dd><p>Suppose <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is a function.  The set <span class="math notranslate nohighlight">\(A\)</span> is called the  <strong>domain</strong> of <span class="math notranslate nohighlight">\(f\)</span>  and <span class="math notranslate nohighlight">\(B\)</span> is called the  <strong>codomain</strong> of <span class="math notranslate nohighlight">\(f\)</span>.</p>
+</dd>
+<dt>Image</dt><dd><p>Suppose <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is a function.  The image of a set <span class="math notranslate nohighlight">\(A'\subseteq A\)</span> is the set:</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[f(A')=\{b\ |\ b=f(a) \text{ for some }a\in A'\}\]</div>
+<dl class="simple myst">
+<dt>Inverse Image</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> and that <span class="math notranslate nohighlight">\(Y\subseteq B\)</span>.   The inverse image of <span class="math notranslate nohighlight">\(Y\)</span> is the set</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[f^{-1}(Y)=\{x\ |\ x\in A\text{ and } f(x)\in Y\}\]</div>
+<dl class="simple myst">
+<dt>Range</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span>.  The range of <span class="math notranslate nohighlight">\(f\)</span> function is the image of its domain (i.e., the range is <span class="math notranslate nohighlight">\(f(A)\)</span>).</p>
+</dd>
+</dl>
+<p>For example, suppose that <span class="math notranslate nohighlight">\(A=\{a, b, c, d\}\)</span> and <span class="math notranslate nohighlight">\(f:A \rightarrow \mathbb{N}\)</span> is the function where <span class="math notranslate nohighlight">\(f(a)=1\)</span>, <span class="math notranslate nohighlight">\(f(b)=1\)</span>, <span class="math notranslate nohighlight">\(f(c)=2\)</span> and <span class="math notranslate nohighlight">\(f(d)=4\)</span>.   Then, we have the following:</p>
+<ul class="simple">
+<li><p>The domain of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\(A\)</span></p></li>
+<li><p>The codomain of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\(\mathbb{N}\)</span></p></li>
+<li><p>The range of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\(\{1, 2\}\)</span></p></li>
+<li><p>The image of <span class="math notranslate nohighlight">\(\{a, b\}\)</span> is <span class="math notranslate nohighlight">\(f(\{a, b\})= \{1\}\)</span></p></li>
+<li><p>The inverse image of <span class="math notranslate nohighlight">\(\{2, 4\}\)</span> is <span class="math notranslate nohighlight">\(f^{-1}(\{2,4\})=\{c, d\}\)</span></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In rational choice theory, we will often consider functions with domain and/or codomains that are powersets of a set.  For example, suppose that <span class="math notranslate nohighlight">\(X=\{a, b, c\}\)</span>.  A function from non-empty subsets of <span class="math notranslate nohighlight">\(X\)</span> to non-empty subsets of <span class="math notranslate nohighlight">\(X\)</span> is denoted <span class="math notranslate nohighlight">\(f:(\wp(X)-\emptyset) \rightarrow (\wp(X)-\emptyset)\)</span>.   An example of such a function is:</p>
+<div class="math notranslate nohighlight" id="equation-def-f">
+<span class="eqno">(1)<a class="headerlink" href="#equation-def-f" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{gather} 
+f(\{a\}) &amp; =  &amp;  \{b\}\\[2pt]
+f(\{b\}) &amp; = &amp; \{b\}\\[2pt]
+f(\{c\}) &amp; = &amp; \{c\}\\[2pt]
+f(\{a,b\}) &amp; = &amp; \{a\}\\[2pt]
+f(\{a,c\}) &amp; = &amp; \{b\}\\[2pt]
+f(\{b,c\}) &amp; = &amp; \{b\}\\[2pt]
+f(\{a,b,c\}) &amp; = &amp; \{b,c\}\\[2pt]
+\end{gather}\end{split}\]</div>
+</div>
+<p>In many situation, we will need to apply one function to the output of another function.  More formally, when the codomain of a function is the same as the domain of another function, then the functions can be composed to form a new function:</p>
+<dl class="simple myst">
+<dt>Composition of functions</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(f: A\rightarrow B\)</span> and <span class="math notranslate nohighlight">\(g: B\rightarrow C\)</span>.  The composition of <span class="math notranslate nohighlight">\(f\)</span> with <span class="math notranslate nohighlight">\(g\)</span> is the function <span class="math notranslate nohighlight">\((g\circ f):A\rightarrow C\)</span> defined as follows: for all <span class="math notranslate nohighlight">\(a\in A\)</span>, <span class="math notranslate nohighlight">\(g\circ f(a) = g(f(a))\)</span></p>
+</dd>
+</dl>
+<p>For example if suppose that <span class="math notranslate nohighlight">\(A=\{a, b, c, d\}\)</span> and <span class="math notranslate nohighlight">\(f:A \rightarrow \mathbb{N}\)</span> is the function where <span class="math notranslate nohighlight">\(f(a)=1\)</span>, <span class="math notranslate nohighlight">\(f(b)=1\)</span>, <span class="math notranslate nohighlight">\(f(c)=2\)</span> and <span class="math notranslate nohighlight">\(f(d)=4\)</span>, and <span class="math notranslate nohighlight">\(g\)</span> is the function <span class="math notranslate nohighlight">\(g:\mathbb{N}\rightarrow\mathbb{N}\)</span> where for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, <span class="math notranslate nohighlight">\(g(n)=2n+1\)</span>.    Then <span class="math notranslate nohighlight">\((g\circ f):A\rightarrow \mathbb{N}\)</span> is the function where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\((g\circ f)(a) = g(f(a))=g(1) = 3\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\((g\circ f)(b) = g(f(b))=g(1) = 3\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\((g\circ f)(c) = g(f(c))=g(2) = 5\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\((g\circ f)(d) = g(f(d))=g(4) = 7\)</span>,</p></li>
+</ul>
+<p>We conclude this brief introduction by defining some important types of functions.</p>
+<dl class="simple myst">
+<dt>Surjection</dt><dd><p>A function <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is a surjection, or onto,  if its range is equal to its codomain.  I.e., <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is surjective if and only if for each <span class="math notranslate nohighlight">\(b\in B\)</span>, there exists an <span class="math notranslate nohighlight">\(a\in A\)</span> such that <span class="math notranslate nohighlight">\(f(a)=b\)</span></p>
+</dd>
+<dt>Injection</dt><dd><p>A function <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is an injection, or 1-1, if distinct elements of the domain produce distinct elements of the codomain.  I.e., <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is 1-1 if and only if <span class="math notranslate nohighlight">\(a\ne a'\)</span> implies <span class="math notranslate nohighlight">\(f(a)\ne f(a')\)</span>, or equivalently <span class="math notranslate nohighlight">\(f(a)=f(a')\)</span> implies <span class="math notranslate nohighlight">\(a=a'\)</span>.</p>
+</dd>
+<dt>Bijection</dt><dd><p>A function <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is a bijection if it is injective and surjective.  In this case, <span class="math notranslate nohighlight">\(f\)</span> is often called a one-to-one correspondence.</p>
+</dd>
+</dl>
+<p>The following examples illustrate these definitions:</p>
+<ol class="simple">
+<li><p>Suppose that <span class="math notranslate nohighlight">\(A=\{a, b, c, d\}\)</span>, <span class="math notranslate nohighlight">\(B=\{1, 2, 3, 4\}\)</span> and <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is a function where <span class="math notranslate nohighlight">\(f(a)=1, f(b)=1, f(c)=2,\)</span> and <span class="math notranslate nohighlight">\(f(d)=3\)</span>. Then <span class="math notranslate nohighlight">\(f\)</span> is not 1-1 and not onto.</p></li>
+<li><p>Suppose that <span class="math notranslate nohighlight">\(A=\{a, b, c, d\}\)</span>, <span class="math notranslate nohighlight">\(B=\{1, 2, 3, 4\}\)</span> and <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is a function where <span class="math notranslate nohighlight">\(f(a)=1, f(b)=2, f(c)=4,\)</span> and <span class="math notranslate nohighlight">\(f(d)=3\)</span>. Then <span class="math notranslate nohighlight">\(f\)</span> is a bijection (i.e., <span class="math notranslate nohighlight">\(f\)</span> is 1-1 and  onto.</p></li>
+<li><p>Suppose that <span class="math notranslate nohighlight">\(A=\{a, b, c\}\)</span>, <span class="math notranslate nohighlight">\(B=\{1, 2\}\)</span> and <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is a function where <span class="math notranslate nohighlight">\(f(a)=1, f(b)=1,\)</span> and <span class="math notranslate nohighlight">\(f(c)=2\)</span>.  Then <span class="math notranslate nohighlight">\(f\)</span> is onto but not  1-1.</p></li>
+<li><p>Suppose that <span class="math notranslate nohighlight">\(A=\{a, b, c\}\)</span>, <span class="math notranslate nohighlight">\(B=\{1, 2, 3, 4\}\)</span> and <span class="math notranslate nohighlight">\(f:A\rightarrow B\)</span> is a function where <span class="math notranslate nohighlight">\(f(a)=1, f(b)=2,\)</span> and  <span class="math notranslate nohighlight">\(f(c)=3\)</span>.  Then <span class="math notranslate nohighlight">\(f\)</span> is 1-1 but not not onto.</p></li>
+</ol>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Consider the function <span class="math notranslate nohighlight">\(f\)</span> defined in <a class="reference internal" href="#equation-def-f">(1)</a>. Does this function satisfy the following constraint: for all <span class="math notranslate nohighlight">\(Y\in\wp(X)-\emptyset\)</span>, <span class="math notranslate nohighlight">\(f(Y)\subseteq Y\)</span>? If so, explain why.  If not, explain why it fails the constraint and find a function that satisfies the constraint.</p></li>
+</ol>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Show answer.</p>
+<p>The above function does not satisfy this constraint since, for instance, <span class="math notranslate nohighlight">\(f(\{a\})=\{b\}\not\subseteq \{a\}\)</span> (we also have that <span class="math notranslate nohighlight">\(f(\{a,c\})=\{b\}\not\subseteq \{a,c\}\)</span>.  An example of a function that satisfies the above constraint is:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{gather*}
+f(\{a\}) &amp; = &amp; \{a\}\\[2pt]
+f(\{b\}) &amp; = &amp; \{b\}\\[2pt]
+f(\{c\}) &amp; = &amp; \{c\}\\[2pt]
+f(\{a,b\}) &amp; = &amp; \{a\}\\[2pt]
+f(\{a,c\}) &amp; = &amp; \{c\}\\[2pt]
+f(\{b,c\}) &amp; = &amp; \{b\}\\[2pt]
+f(\{a,b,c\}) &amp; = &amp; \{b,c\}\\[2pt]
+\end{gather*}\]</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./mathematical-background"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="relations.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Relations</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eric Pacuit<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

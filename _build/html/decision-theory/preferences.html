@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferences &#8212; Notes on Rational Choice Theory</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Choice Functions" href="choice.html" />
+    <link rel="prev" title="Decision Theory" href="decision-theory.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Notes on Rational Choice Theory</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Overview
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="decision-theory.html">
+   Decision Theory
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="choice.html">
+     Choice Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="utility.html">
+     Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lotteries-expected-utility.html">
+     Lotteries and Expected Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vnm.html">
+     von Neumann-Morgenstern Theorem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../mathematical-background/math-background.html">
+   Mathematical Background
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/sets.html">
+     Sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/relations.html">
+     Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/functions.html">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/decision-theory/preferences.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ruling-out-cycles-in-strict-preferences">
+   Ruling out cycles in strict preferences
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ruling-out-noncomparabilities">
+   Ruling out noncomparabilities
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rational-preferences">
+   Rational preferences
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#weak-preference-relation">
+     Weak preference relation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="preferences">
+<h1>Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline">¶</a></h1>
+<p>Preferences in rational choice theory are  understood comparatively.  So, if a decision maker “prefers red wine”, then this means that the decision maker prefers red wine to the other available alternatives (e.g., red wine more than white wine).</p>
+<p>A central concept in many models of rational choice is a decision maker’s <strong>strict preference</strong> over a set of objects.   A decision maker’s strict preference over a set <span class="math notranslate nohighlight">\(X\)</span> is represented as a relation <span class="math notranslate nohighlight">\(P\subseteq X\times X\)</span>.  The underlying idea is that if <span class="math notranslate nohighlight">\(P\)</span> represents the decision maker’s strict preference and <span class="math notranslate nohighlight">\(xPy\)</span> (i.e., the decision maker strictly prefers <span class="math notranslate nohighlight">\(x\)</span> to <span class="math notranslate nohighlight">\(y\)</span>), then the decision maker would pay some non-zero amount money to trade <span class="math notranslate nohighlight">\(y\)</span> for <span class="math notranslate nohighlight">\(x\)</span>.  Under this interpretation, it is clear that a minimal constraint is that a strict preference is asymmetric:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P\)</span> is asymmetric: for all <span class="math notranslate nohighlight">\(x, y\in X\)</span>, if <span class="math notranslate nohighlight">\(x P y\)</span>, then it is not the case that <span class="math notranslate nohighlight">\(y P x\)</span> (written not-<span class="math notranslate nohighlight">\(y P x\)</span>).</p></li>
+</ul>
+<p>It is clearly irrational for a decision maker to pay some money to trade <span class="math notranslate nohighlight">\(y\)</span> for <span class="math notranslate nohighlight">\(x\)</span> <em>and</em>, at the same time, be willing to pay additional money to trade <span class="math notranslate nohighlight">\(x\)</span> back for <span class="math notranslate nohighlight">\(y\)</span>.  Note that since asymmetry implies irreflexivity, any strict preference relation is  irreflexive: for all <span class="math notranslate nohighlight">\(x\)</span>, it is not the case that <span class="math notranslate nohighlight">\(x P x\)</span>.</p>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>Examples of asymmetric strict preferences on the set <span class="math notranslate nohighlight">\(X=\{a, b, c\}\)</span> include:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\{(a, b), (a, c)\}\)</span>: <span class="math notranslate nohighlight">\(a\)</span> is strictly preferred to <span class="math notranslate nohighlight">\(b\)</span> and strictly preferred to <span class="math notranslate nohighlight">\(c\)</span>, but there is no strict preference one way or the other between <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\{(a, b), (b, c), (a, c)\}\)</span>: <span class="math notranslate nohighlight">\(a\)</span> is strictly preferred to <span class="math notranslate nohighlight">\(b\)</span> and strictly preferred to <span class="math notranslate nohighlight">\(c\)</span>, and <span class="math notranslate nohighlight">\(b\)</span> is strictly preferred to <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\{(a, b), (b, c)\}\)</span>: <span class="math notranslate nohighlight">\(a\)</span> is strictly preferred to <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(b\)</span> is strictly preferred to <span class="math notranslate nohighlight">\(c\)</span>, but there is no strict preference one way or the other between <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\{(a, b), (b, c), (c, a)\}\)</span>: <span class="math notranslate nohighlight">\(a\)</span> is strictly preferred to <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(b\)</span> is strictly preferred to <span class="math notranslate nohighlight">\(c\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> is strictly preferred to <span class="math notranslate nohighlight">\(a\)</span>.</p></li>
+</ol>
+</div>
+<p>In the first example, the decision maker does not have a preference over all the elements of <span class="math notranslate nohighlight">\(X\)</span>. In particular, the decision maker does not have a strict preference one way or the other between <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span>.   That is, it is not the case that <span class="math notranslate nohighlight">\(b P c\)</span>  and  it is not the case that <span class="math notranslate nohighlight">\(c P b\)</span>.</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(P\)</span> is an asymmetric relation on <span class="math notranslate nohighlight">\(X\)</span>.  Define a relation <span class="math notranslate nohighlight">\(\simeq \subseteq X \times X\)</span> as follows: For all <span class="math notranslate nohighlight">\(x, y\in X\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+x \simeq y\text{ if and only if not-}x P y\text{ and not-}y P x.
+\]</div>
+<p>It is not hard to see that for any asymmetric relation <span class="math notranslate nohighlight">\(P\)</span> on <span class="math notranslate nohighlight">\(X\)</span>,</p>
+<ol class="simple">
+<li><p>exactly one of <span class="math notranslate nohighlight">\(x P y\)</span>, <span class="math notranslate nohighlight">\(y P x\)</span>, and <span class="math notranslate nohighlight">\(x\simeq y\)</span> is true.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\simeq\)</span> is symmetric (for all <span class="math notranslate nohighlight">\(x, y \in X\)</span>, if <span class="math notranslate nohighlight">\(x \simeq y\)</span> then <span class="math notranslate nohighlight">\(y\simeq x\)</span>) and reflexive (for all <span class="math notranslate nohighlight">\(x\in X\)</span>, <span class="math notranslate nohighlight">\(x \simeq x\)</span>).</p></li>
+</ol>
+<p>In many situations, it is convenient to decompose the <span class="math notranslate nohighlight">\(\simeq\)</span> relation further.  Given a strict preference <span class="math notranslate nohighlight">\(P\)</span>  on <span class="math notranslate nohighlight">\(X\)</span> for a decision maker and items <span class="math notranslate nohighlight">\(x, y\in X\)</span>, there are two reasons why <span class="math notranslate nohighlight">\(x \simeq y\)</span>:</p>
+<ol class="simple">
+<li><p>The decision maker is <em>indifferent</em> between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.   In this case, we write <span class="math notranslate nohighlight">\(x I y\)</span>.</p></li>
+<li><p>The decision maker <em>cannot compare</em>  <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. In this case, we write <span class="math notranslate nohighlight">\(x N y\)</span>.</p></li>
+</ol>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="warning admonition">
+<p class="admonition-title">Notation</p>
+<p>There is no settled notation for strict/weak preferences and indifference.   In some texts, you might see <span class="math notranslate nohighlight">\(\succ\)</span> instead of <span class="math notranslate nohighlight">\(P\)</span> representing a strict preference, <span class="math notranslate nohighlight">\(\succeq\)</span> instead of <span class="math notranslate nohighlight">\(R\)</span> representing a weak preference,  and <span class="math notranslate nohighlight">\(\sim \)</span> instead of <span class="math notranslate nohighlight">\(I\)</span> representing an indifference relation.</p>
+</div>
+</div>
+<p>Thus, there are four distinct ways a decision maker can compare <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(x P y\)</span>: the decision maker <em>strictly prefers</em> <span class="math notranslate nohighlight">\(x\)</span>  to <span class="math notranslate nohighlight">\(y\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(y P x\)</span>: the decision maker <em>strictly prefers</em> <span class="math notranslate nohighlight">\(y\)</span>  to <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(x I y\)</span>: the decision maker is <em>indifferent</em> between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(x N y\)</span>: the decision maker <em>cannot compare</em> <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p></li>
+</ol>
+<p>Putting everything together, a decision maker’s preferences on  <span class="math notranslate nohighlight">\(X\)</span> is represented by three relations <span class="math notranslate nohighlight">\(P\subseteq X\times X\)</span>, <span class="math notranslate nohighlight">\(I\subseteq X\times X\)</span> and <span class="math notranslate nohighlight">\(N\subseteq X\times X\)</span> satisfying the following minimal constraints:</p>
+<ol class="simple">
+<li><p>For all <span class="math notranslate nohighlight">\(x, y \in X\)</span>, exactly one of <span class="math notranslate nohighlight">\(x P y\)</span>, <span class="math notranslate nohighlight">\(yP x\)</span>, <span class="math notranslate nohighlight">\(x I y\)</span> and <span class="math notranslate nohighlight">\(x N y\)</span> is true.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P\)</span> is asymmetric</p></li>
+<li><p><span class="math notranslate nohighlight">\(I\)</span> is reflexive and symmetric.</p></li>
+<li><p><span class="math notranslate nohighlight">\(N\)</span> is symmetric.</p></li>
+</ol>
+<p>A more substantive assumption is that a decision maker’s strict preference is <strong>transitive</strong>:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P\)</span> is transitive: for all <span class="math notranslate nohighlight">\(x, y, z\in X\)</span> if <span class="math notranslate nohighlight">\(xPy\)</span> and <span class="math notranslate nohighlight">\(yP z\)</span>, then <span class="math notranslate nohighlight">\(x P z\)</span>.</p></li>
+</ul>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>See A. Tversky’s classic paper <a class="reference external" href="https://pages.ucsd.edu/~mckenzie/Tversky1969PsychReview.pdf">Intransitivity of Preferences</a> and M. Regenwetter, J. Dana,  and C. P.  Davis-Stober, <a class="reference external" href="https://doi.apa.org/doiLanding?doi=10.1037%2Fa0021150">Transitivity of Preferences</a> for a crtique of these experiments.</p>
+</div>
+<p>While there are some experiments that raise doubts about whether transtivity is a good description of people’s strict preferences, it is standard in rational choice theory to assume that a decision maker’s strict preference is transitive.</p>
+<p>Assuming that indifference (<span class="math notranslate nohighlight">\(I\)</span>) and incomparability (<span class="math notranslate nohighlight">\(N\)</span>) are transitive is more controversial:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I\)</span> is transitive: For all <span class="math notranslate nohighlight">\(x,y, z\in X\)</span>, if <span class="math notranslate nohighlight">\(x I y\)</span> and <span class="math notranslate nohighlight">\(y I z\)</span>, then <span class="math notranslate nohighlight">\(x I z\)</span>.<br />
+You may be indifferent between a curry with <span class="math notranslate nohighlight">\(x\)</span> amount of cayenne pepper, and a curry with <span class="math notranslate nohighlight">\(x\)</span> plus one particle of cayenne pepper for any amount <span class="math notranslate nohighlight">\(x\)</span>. But you are not indifferent between a curry with no cayenne pepper and one with 1 pound of cayenne pepper in  it!</p></li>
+<li><p><span class="math notranslate nohighlight">\(N\)</span> is transitive: for all <span class="math notranslate nohighlight">\(x,y, z\in X\)</span>, if <span class="math notranslate nohighlight">\(x N y\)</span> and <span class="math notranslate nohighlight">\(y N z\)</span>, then <span class="math notranslate nohighlight">\(x N z\)</span>.<br />
+You may not be able to compare having a job as a professor with having a job as a programmer.   Furthermore, you cannot compare having a job as a programmer with having a job as a professor with an extra $1,000.   However, you do strictly prefer having a job as a professor with an extra $1,000 to having a job as a professor.</p></li>
+</ul>
+<p>There are two ways that a decision maker’s strict preference <span class="math notranslate nohighlight">\(P\)</span> on <span class="math notranslate nohighlight">\(X\)</span>  may fail transitivity:</p>
+<ol class="simple">
+<li><p>The decision maker lacks a strict preference: There are <span class="math notranslate nohighlight">\(x, y, z \in X\)</span> such that <span class="math notranslate nohighlight">\(x P y\)</span> and <span class="math notranslate nohighlight">\(y P z\)</span>, but  <span class="math notranslate nohighlight">\(x N z\)</span> (i.e., <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(z\)</span> are incomparable).</p></li>
+<li><p>There is a cycle in the decision maker’s preferences: There are <span class="math notranslate nohighlight">\(x, y, z \in X\)</span> such that <span class="math notranslate nohighlight">\(x P y\)</span>,  <span class="math notranslate nohighlight">\(y P z\)</span>, and <span class="math notranslate nohighlight">\(z P x\)</span>.</p></li>
+</ol>
+<p>To justify the assumption that a strict preference relation is transtive, we need to argue that there is something irrational about both of the above situations. We start with the second situation.   The first situation is ruled out with an additional assumption about a decision maker’s preferences.</p>
+<div class="section" id="ruling-out-cycles-in-strict-preferences">
+<h2>Ruling out cycles in strict preferences<a class="headerlink" href="#ruling-out-cycles-in-strict-preferences" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>cycle</strong> (of length 3) in a relation <span class="math notranslate nohighlight">\(P\subseteq X\times X\)</span> is a sequence <span class="math notranslate nohighlight">\((x, y, z)\)</span> where <span class="math notranslate nohighlight">\(x P y\)</span>, <span class="math notranslate nohighlight">\(y P z\)</span> and <span class="math notranslate nohighlight">\(z P x\)</span>.   There are two main arguments that rule out preferences with cycles (as in situation 2).</p>
+<p>The first argument is that we cannot make sense of a decision maker with a strict preference that has a cycle:</p>
+<blockquote>
+<div><p>I do not think we can clearly say what should convince us that a [person] at a given time (without change of mind) preferred <span class="math notranslate nohighlight">\(a\)</span> to <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(b\)</span> to <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(c\)</span> to <span class="math notranslate nohighlight">\(a\)</span>. The reason for our difficulty is that we cannot make good sense of an attribution of preference except against a background of coherent attitudes…My point is that if we are intelligibly to attribute attitudes and beliefs, or usefully to describe motions as behaviour, then we are committed to finding, in the pattern of behaviour, belief, and desire, a large degree of rationality and consistency.  (D. Davidson, <a class="reference external" href="https://link.springer.com/chapter/10.1007/978-1-349-02110-9_2"><em>Philosophy as psychology</em></a>, 1974: p. 237)</p>
+</div></blockquote>
+<p>The second argument that rules out cycles in a decision maker’s strict preference is the so-called Money-Pump Argument.   <strong>The Money-Pump Argument</strong> is a though experiment that shows that a decision maker with cyclic strict preferences can end up paying an indefinite amount of money without gaining anything new.  For an item <span class="math notranslate nohighlight">\(x\in X\)</span>, we write <span class="math notranslate nohighlight">\((x, \$u)\)</span> to mean that the decision maker has <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(\$u\)</span> and write <span class="math notranslate nohighlight">\((x, -\$u)\)</span> to mean that the decision maker has <span class="math notranslate nohighlight">\(x\)</span> and pays <span class="math notranslate nohighlight">\(\$u\)</span>. There are three key assumptions about a decision maker’s strict preference <span class="math notranslate nohighlight">\(P\)</span> and the decision maker’s opinion about money:</p>
+<ol class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(x P y\)</span>, then the decision maker will always take <span class="math notranslate nohighlight">\(x\)</span> when <span class="math notranslate nohighlight">\(y\)</span> is the only alternative.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(x P y\)</span>, then there is some <span class="math notranslate nohighlight">\(v &gt; 0\)</span> such that for all <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\((x, -\$u) P y\)</span> if and only if <span class="math notranslate nohighlight">\(0\le u\le v\)</span>.</p></li>
+<li><p>The items and money are <em>separable</em> and the decision maker prefers more money to less: For all <span class="math notranslate nohighlight">\(x\in X\)</span> and <span class="math notranslate nohighlight">\(w,z\)</span>, we have that  <span class="math notranslate nohighlight">\((x,\$w) P (x,\$z\)</span>) if and only if <span class="math notranslate nohighlight">\(w&gt;z\)</span>;   and, for all <span class="math notranslate nohighlight">\(x, y \in X\)</span> and <span class="math notranslate nohighlight">\(w\)</span>,  if <span class="math notranslate nohighlight">\(x P y\)</span>, then <span class="math notranslate nohighlight">\((x,\$w) P (y,\$w)\)</span>.</p></li>
+</ol>
+<p>Suppose that Ann has a cycle in her strict preferences over the set <span class="math notranslate nohighlight">\(\{r, w, b\}\)</span>:  <span class="math notranslate nohighlight">\(r P w\)</span>, <span class="math notranslate nohighlight">\(w P b\)</span>, and <span class="math notranslate nohighlight">\(b P r\)</span>.  Furthermore, in line with assumption 2, assume that Ann has the following strict preferences: <span class="math notranslate nohighlight">\((r, -\$1) P w\)</span>, <span class="math notranslate nohighlight">\((w,-\$1) P b\)</span>, and <span class="math notranslate nohighlight">\((b, -\$1) P r\)</span>.  Suppose that Ann is offered a chance to trade <span class="math notranslate nohighlight">\(r\)</span> for <span class="math notranslate nohighlight">\(b\)</span> plus she must pay <span class="math notranslate nohighlight">\(\$1\)</span>.  Since <span class="math notranslate nohighlight">\((b,-\$1) P r\)</span>, she will accept that offer.   So she now has <span class="math notranslate nohighlight">\(b\)</span> and has paid <span class="math notranslate nohighlight">\(\$1\)</span>.   Now, suppose she is offered a chance to trade <span class="math notranslate nohighlight">\(w\)</span> for <span class="math notranslate nohighlight">\(b\)</span> plus she must pay <span class="math notranslate nohighlight">\(\$1\)</span>. Since  <span class="math notranslate nohighlight">\((w - \$1) P b\)</span>, she will accept that offer.  So, she now has <span class="math notranslate nohighlight">\(w\)</span> and has paid <span class="math notranslate nohighlight">\(\$2\)</span>.  Suppose she is offered a chance to trade <span class="math notranslate nohighlight">\(w\)</span> for <span class="math notranslate nohighlight">\(r\)</span> plus she must pay <span class="math notranslate nohighlight">\(\$1\)</span>.  Since  <span class="math notranslate nohighlight">\((r, -\$1) P w\)</span>, she will accept that offer.   Now she has <span class="math notranslate nohighlight">\(r\)</span> and has paid <span class="math notranslate nohighlight">\(\$3\)</span>.  But she started with <span class="math notranslate nohighlight">\(r\)</span> and paying <span class="math notranslate nohighlight">\(\$0\)</span> and ended up with <span class="math notranslate nohighlight">\(r\)</span> and paying <span class="math notranslate nohighlight">\(\$3\)</span>!  By assumption 3, this is a strictly worse situation for Ann: <span class="math notranslate nohighlight">\((r, \$0) P (r, -\$3)\)</span>.  But it does not end here, Ann will contiue to accept the offers resulting in her paying an indefinite amout of money.   Ann can avoid such a money-pump argument by ensuring that there are no cycles in her strict preferences.</p>
+</div>
+<div class="section" id="ruling-out-noncomparabilities">
+<h2>Ruling out noncomparabilities<a class="headerlink" href="#ruling-out-noncomparabilities" title="Permalink to this headline">¶</a></h2>
+<p>Another key assumption in a rational choice model is that decision makers are opinionated about <em>all</em> the objects of choice. That is, there are no objects <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> such that <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are incomparable for the decision maker.</p>
+<ul class="simple">
+<li><p>Completeness: For all <span class="math notranslate nohighlight">\(x, y\in X\)</span>,  exactly one of <span class="math notranslate nohighlight">\(x P y\)</span>, <span class="math notranslate nohighlight">\(yP x\)</span> or <span class="math notranslate nohighlight">\(x I y\)</span> is true. I.e., for all <span class="math notranslate nohighlight">\(x, y\in X\)</span>, not-<span class="math notranslate nohighlight">\(x N y\)</span>.</p></li>
+</ul>
+<p>Completeness is a common simplifying assumption in many ratioanl chcoice models.  However, assuming completeness does not have the same type of justification as transitivity:</p>
+<blockquote>
+<div><p>[O]f all the axioms of utility theory, the completeness axiom is perhaps the most questionable.   Like others, it is inaccurate as a description of real life; but unlike them we find it hard to accept even from the normative viewpoint. (Aumann, <a class="reference external" href="https://www.jstor.org/stable/1909888?seq=1#metadata_info_tab_contents">Utility Theory without the Completeness Axiom</a>, Econometrica, 1962)</p>
+</div></blockquote>
+</div>
+<div class="section" id="rational-preferences">
+<h2>Rational preferences<a class="headerlink" href="#rational-preferences" title="Permalink to this headline">¶</a></h2>
+<p>We start with some definitions:</p>
+<dl class="simple myst">
+<dt>Connected relation</dt><dd><p>A relation <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is connected if for all <span class="math notranslate nohighlight">\(x, y\in X\)</span> either <span class="math notranslate nohighlight">\(x R y\)</span> or <span class="math notranslate nohighlight">\(y R x\)</span>.</p>
+</dd>
+<dt>Strict weak order</dt><dd><p>A strict weak order on a set <span class="math notranslate nohighlight">\(X\)</span> is a transitive and asymmetric relation on <span class="math notranslate nohighlight">\(X\)</span>.</p>
+</dd>
+<dt>Equivalence relation</dt><dd><p>An equivalence relation on <span class="math notranslate nohighlight">\(X\)</span> is a reflexive, transitive and symmetric relation on <span class="math notranslate nohighlight">\(X\)</span>.</p>
+</dd>
+</dl>
+<p>In a rational choice model, a standard assumption is that a decision maker’s preferences satisfies  completeness and transitivity (for both  strict preference and indifference).</p>
+<dl class="simple myst">
+<dt>Rational preference</dt><dd><p>A rational preference on a set <span class="math notranslate nohighlight">\(X\)</span> is a pair <span class="math notranslate nohighlight">\((P, I)\)</span>  where <span class="math notranslate nohighlight">\(P\)</span> is a strict weak order on <span class="math notranslate nohighlight">\(X\)</span>,  <span class="math notranslate nohighlight">\(I\)</span> is an equivalence relation on <span class="math notranslate nohighlight">\(X\)</span>, and completeness is satisfied: for all <span class="math notranslate nohighlight">\(x, y\in X\)</span>, exactly one of <span class="math notranslate nohighlight">\(x P y\)</span>, <span class="math notranslate nohighlight">\(y P x\)</span> or <span class="math notranslate nohighlight">\(x I y\)</span> is true.</p>
+</dd>
+</dl>
+<p>Note that for a rational preference <span class="math notranslate nohighlight">\((P, I)\)</span>, there is no <span class="math notranslate nohighlight">\(x, y\in X\)</span> such that <span class="math notranslate nohighlight">\(x P y \)</span> and <span class="math notranslate nohighlight">\(x I y\)</span> (i.e., a rational agent cannot both be indifferent between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> and strictly prefer <span class="math notranslate nohighlight">\(x\)</span> to <span class="math notranslate nohighlight">\(y\)</span>). Using this fact and transitivity of <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(I\)</span>, we have the following two key properties:</p>
+<ol class="simple">
+<li><p>For all <span class="math notranslate nohighlight">\(x, y, z\in X\)</span>, if <span class="math notranslate nohighlight">\(x P y\)</span> and <span class="math notranslate nohighlight">\(y I z\)</span>, then <span class="math notranslate nohighlight">\(x P z\)</span>.</p></li>
+<li><p>For all <span class="math notranslate nohighlight">\(x, y, z\in X\)</span>, if <span class="math notranslate nohighlight">\(x I y\)</span> and <span class="math notranslate nohighlight">\(y P z\)</span>, then <span class="math notranslate nohighlight">\(x P z\)</span>.</p></li>
+</ol>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Show proof.</p>
+<p>We prove 1 and leave 2 as an exercise.    Suppose that <span class="math notranslate nohighlight">\((P, I)\)</span> is a rational preference and for <span class="math notranslate nohighlight">\(x, y, z\in X\)</span> we have that <span class="math notranslate nohighlight">\(x P y\)</span> and <span class="math notranslate nohighlight">\(y I z\)</span>.   By completeness, exactly one of  <span class="math notranslate nohighlight">\(x P z\)</span>, <span class="math notranslate nohighlight">\(z P x\)</span> or <span class="math notranslate nohighlight">\(x I z\)</span> is true.    We show that both <span class="math notranslate nohighlight">\(z P x\)</span> and <span class="math notranslate nohighlight">\(x I z\)</span> lead to a contradiction leaving only  <span class="math notranslate nohighlight">\(x P z\)</span>, as desired.  If <span class="math notranslate nohighlight">\(z P x\)</span>, then since <span class="math notranslate nohighlight">\(x P y\)</span> and <span class="math notranslate nohighlight">\(P\)</span> is transitive, we have that <span class="math notranslate nohighlight">\(z P y\)</span>.  Since <span class="math notranslate nohighlight">\(I\)</span> is symmetric and <span class="math notranslate nohighlight">\(y I z\)</span>, we have that <span class="math notranslate nohighlight">\(z I y\)</span>.  This is a contradiction since <span class="math notranslate nohighlight">\(z P y\)</span> and <span class="math notranslate nohighlight">\(z I y\)</span> cannot  both be true.  If <span class="math notranslate nohighlight">\(z I x\)</span>, then since <span class="math notranslate nohighlight">\(y I z\)</span> and <span class="math notranslate nohighlight">\(I\)</span> is transitive, we have that <span class="math notranslate nohighlight">\(y I x\)</span>.  Since <span class="math notranslate nohighlight">\(I\)</span> is symmetric, we have that <span class="math notranslate nohighlight">\(x I y\)</span>.  This is a contradiction since <span class="math notranslate nohighlight">\(x P y\)</span> and  <span class="math notranslate nohighlight">\(x I y\)</span> cannot  both be true.</p>
+</div>
+<p>In many situations it is natural to assume that the decision maker is not indifferent about any of the items in a set <span class="math notranslate nohighlight">\(X\)</span> (i.e., the decision maker’s indifference relation is empty).   In such a case, we can represent a decision maker by a single relation <span class="math notranslate nohighlight">\(P\)</span> (the decision maker’s strict preference relation) satisfying the following properties:</p>
+<dl class="simple myst">
+<dt>Linear order</dt><dd><p>A linear order on a set <span class="math notranslate nohighlight">\(X\)</span> is a transitive, connected and asymmetric relation on <span class="math notranslate nohighlight">\(X\)</span>.</p>
+</dd>
+</dl>
+<div class="section" id="weak-preference-relation">
+<h3>Weak preference relation<a class="headerlink" href="#weak-preference-relation" title="Permalink to this headline">¶</a></h3>
+<p>Even if a decision maker is indifferent between some items, we can represent the decision maker’s rational preferences by a single relations.</p>
+<dl class="simple myst">
+<dt>Weak preference relation</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\((P, I)\)</span> is a rational preference on <span class="math notranslate nohighlight">\(X\)</span>.   The weak preference relation based on <span class="math notranslate nohighlight">\((P, I)\)</span> is defined as follows:  <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span>, where <span class="math notranslate nohighlight">\(x R y\)</span> if and only if <span class="math notranslate nohighlight">\(x P y\)</span>  or <span class="math notranslate nohighlight">\(x I y\)</span>.  If <span class="math notranslate nohighlight">\(x R y\)</span>, we say that “<span class="math notranslate nohighlight">\(x\)</span> is weakly preferred to <span class="math notranslate nohighlight">\(y\)</span>”.</p>
+</dd>
+</dl>
+<p>It is not hard to see that if <span class="math notranslate nohighlight">\(R\)</span> is a weak preference relation induced by a rational preference <span class="math notranslate nohighlight">\((P, I)\)</span>, then <span class="math notranslate nohighlight">\(R\)</span> is a reflexive, transitive and connected relation.</p>
+<p>We can also start with a weak preference relation and induce strict preference and an indifference relation.</p>
+<dl class="simple myst">
+<dt>Rational weak preference</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> is a set.  A rational weak preference  on <span class="math notranslate nohighlight">\(X\)</span> is a relation <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> that is reflexive, transitive and connected.</p>
+</dd>
+</dl>
+<p>A key observation is that rational weak preferences can be used to represent a decision maker’s rational preferences.</p>
+<div class="observation admonition">
+<p class="admonition-title">Observation</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is a reflexive and transitive relation. Define relations <span class="math notranslate nohighlight">\(P_R\subseteq X\times X\)</span> and <span class="math notranslate nohighlight">\(I_R\subseteq X \times X\)</span> as follows:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x P_R y\)</span> if and only if <span class="math notranslate nohighlight">\(x R y\)</span> and not-<span class="math notranslate nohighlight">\(y R x\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(x I_R y\)</span> if and only if <span class="math notranslate nohighlight">\(x R y\)</span> and <span class="math notranslate nohighlight">\(y R x\)</span>.</p></li>
+</ul>
+<p>Then, <span class="math notranslate nohighlight">\((P_R, I_R)\)</span> is a rational preference on <span class="math notranslate nohighlight">\(X\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Show proof.</p>
+<p>Clearly, there are no <span class="math notranslate nohighlight">\(x, y\in X\)</span> such that <span class="math notranslate nohighlight">\(x P_R y\)</span> and <span class="math notranslate nohighlight">\(x I_R y\)</span>.</p>
+<p>We prove that <span class="math notranslate nohighlight">\(P_R\)</span> is transitive: Suppose that <span class="math notranslate nohighlight">\(x P_R y\)</span> and <span class="math notranslate nohighlight">\(y P_R z\)</span>.   Then <span class="math notranslate nohighlight">\(x R y\)</span>,  not-<span class="math notranslate nohighlight">\(yRx\)</span> and  <span class="math notranslate nohighlight">\(y R z\)</span> and not-<span class="math notranslate nohighlight">\(zRy\)</span>.  Since <span class="math notranslate nohighlight">\(R\)</span> is transitive, we have that <span class="math notranslate nohighlight">\(x R z\)</span>.  Suppose that <span class="math notranslate nohighlight">\(z Rx\)</span>.  Then since <span class="math notranslate nohighlight">\(R\)</span> is transitive and <span class="math notranslate nohighlight">\(x R y\)</span>, we have that <span class="math notranslate nohighlight">\(zRy\)</span>, which contradicts not-<span class="math notranslate nohighlight">\(zRy\)</span>.  Hence, <span class="math notranslate nohighlight">\(xRz\)</span> and not-<span class="math notranslate nohighlight">\(zRx\)</span>, and so <span class="math notranslate nohighlight">\(x P_R z\)</span>.  The proof that <span class="math notranslate nohighlight">\(P_R\)</span> is asymmetric is left as an exercise.</p>
+<p>The proof that <span class="math notranslate nohighlight">\(I_R\)</span> is an equivalence relation is left as an exercise.</p>
+<p>Finally, we show that <span class="math notranslate nohighlight">\((P_R, I_R)\)</span> satisfies completeness.  Suppose that <span class="math notranslate nohighlight">\(x, y\in X\)</span>.  Since <span class="math notranslate nohighlight">\(R\)</span> is connected, we have either <span class="math notranslate nohighlight">\(xRy\)</span> or <span class="math notranslate nohighlight">\(yRx\)</span>.   There are three possibilities:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(xRy\)</span> and not-<span class="math notranslate nohighlight">\(yRx\)</span>. In this case, <span class="math notranslate nohighlight">\(x P_R y\)</span>.</p></li>
+<li><p>not-<span class="math notranslate nohighlight">\(xRy\)</span> and <span class="math notranslate nohighlight">\(yRx\)</span>. In this case, <span class="math notranslate nohighlight">\(y P_R x\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(xRy\)</span> and <span class="math notranslate nohighlight">\(yRx\)</span>. In this case, <span class="math notranslate nohighlight">\(x I_R y\)</span>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Suppose that <span class="math notranslate nohighlight">\((P, I)\)</span> is a rational preference on <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(R\)</span> is the induced weak preference relation.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(R\)</span> is reflexive, transitive and connected.</p></li>
+<li><p>For all <span class="math notranslate nohighlight">\(x, y\in X\)</span>, if not-<span class="math notranslate nohighlight">\(x P y\)</span>, then <span class="math notranslate nohighlight">\(yRx\)</span>.</p></li>
+<li><p>For all <span class="math notranslate nohighlight">\(x, y\in X\)</span>, if not-<span class="math notranslate nohighlight">\(x R y\)</span>, then <span class="math notranslate nohighlight">\(yPx\)</span>.</p></li>
+<li><p>For all <span class="math notranslate nohighlight">\(x, y, z\in X\)</span>, if <span class="math notranslate nohighlight">\(x R y\)</span> and <span class="math notranslate nohighlight">\(y P z\)</span>, then <span class="math notranslate nohighlight">\(x P z\)</span>.</p></li>
+<li><p>For all <span class="math notranslate nohighlight">\(x, y, z\in X\)</span>, if <span class="math notranslate nohighlight">\(x P y\)</span> and <span class="math notranslate nohighlight">\(y R z\)</span>, then <span class="math notranslate nohighlight">\(x P z\)</span>.</p></li>
+</ol>
+</li>
+<li><p>There is an alternative way to characterize rational preferences  which is used in some texts.  A relation <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is <strong>negatively transitive</strong> provided  for all <span class="math notranslate nohighlight">\(x, y, z\in X\)</span>, if not-<span class="math notranslate nohighlight">\(x R y\)</span>  and  not-<span class="math notranslate nohighlight">\(y R  z\)</span>, then   not-<span class="math notranslate nohighlight">\(x R z\)</span>.</p>
+<ol class="simple">
+<li><p>Prove that a relation <span class="math notranslate nohighlight">\(R\)</span> is negatively transitive if, and only if, for all <span class="math notranslate nohighlight">\(x, y\in X\)</span>, if <span class="math notranslate nohighlight">\(x R y\)</span>, then for all <span class="math notranslate nohighlight">\(z\in X\)</span>, either <span class="math notranslate nohighlight">\(x R z\)</span> or <span class="math notranslate nohighlight">\(z R y\)</span>.</p></li>
+<li><p>Suppose that <span class="math notranslate nohighlight">\(R'\)</span> is negatively transitive and irreflexive.   Then, define <span class="math notranslate nohighlight">\(R\)</span> by <span class="math notranslate nohighlight">\(x R  y\)</span> if and only if it is not the case that <span class="math notranslate nohighlight">\(y R' x\)</span> and <span class="math notranslate nohighlight">\(x I y\)</span> if and only if neither <span class="math notranslate nohighlight">\(x R' y\)</span> nor <span class="math notranslate nohighlight">\(y R' x\)</span>.    Then, <span class="math notranslate nohighlight">\(R\)</span> is complete and transitive.  Furthermore, if we define <span class="math notranslate nohighlight">\(P_R\)</span> from <span class="math notranslate nohighlight">\(R\)</span> as in question 2 above, we have <span class="math notranslate nohighlight">\(P_R=R'\)</span>, and if we define <span class="math notranslate nohighlight">\(I_R\)</span> as in question 2, we have <span class="math notranslate nohighlight">\(I_R=I\)</span>.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./decision-theory"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="decision-theory.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Decision Theory</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="choice.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Choice Functions</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eric Pacuit<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utility &#8212; Notes on Rational Choice Theory</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lotteries and Expected Utility" href="lotteries-expected-utility.html" />
+    <link rel="prev" title="Choice Functions" href="choice.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Notes on Rational Choice Theory</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Overview
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="decision-theory.html">
+   Decision Theory
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="preferences.html">
+     Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="choice.html">
+     Choice Functions
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lotteries-expected-utility.html">
+     Lotteries and Expected Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vnm.html">
+     von Neumann-Morgenstern Theorem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../mathematical-background/math-background.html">
+   Mathematical Background
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/sets.html">
+     Sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/relations.html">
+     Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/functions.html">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/decision-theory/utility.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="utility">
+<h1>Utility<a class="headerlink" href="#utility" title="Permalink to this headline">¶</a></h1>
+<p>A  <strong>utility function</strong> on a set <span class="math notranslate nohighlight">\(X\)</span> is a function <span class="math notranslate nohighlight">\(u:X\rightarrow\mathbb{R}\)</span>, where <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> is the set of real numbers.   Utility functions are often used to <em>represent</em> preferences.</p>
+<dl class="simple myst">
+<dt>Representing a relation</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is a relation on <span class="math notranslate nohighlight">\(X\)</span>.   We say that  <span class="math notranslate nohighlight">\(R\)</span> is <strong>representable by a utility function</strong> when there is a <span class="math notranslate nohighlight">\(u:X\rightarrow \mathbb{R}\)</span> such that for all <span class="math notranslate nohighlight">\(x,y\in X\)</span>, <span class="math notranslate nohighlight">\(x R y\)</span> if and only if <span class="math notranslate nohighlight">\(u(x)\ge u(y)\)</span>.</p>
+</dd>
+</dl>
+<p>The key fact is that all rational weak preferences are representable by a utility function.</p>
+<div class="observation admonition">
+<p class="admonition-title">Theorem</p>
+<p>Suppose that  <span class="math notranslate nohighlight">\(X\)</span> is a finite set.   A relation <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is a rational weak preference on <span class="math notranslate nohighlight">\(X\)</span> if and only if <span class="math notranslate nohighlight">\(R\)</span> is representable by a utility function.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Show proof.</p>
+<p>We leave it to the reader to show that if <span class="math notranslate nohighlight">\(R\)</span> is representable by a utility function, then <span class="math notranslate nohighlight">\(R\)</span> is transitive and complete.</p>
+<p>We prove the following: For all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, any preference relation <span class="math notranslate nohighlight">\(R\)</span> on a set of size <span class="math notranslate nohighlight">\(n\)</span> is representable by a utility function <span class="math notranslate nohighlight">\(u_R:X\rightarrow\mathbb{R}\)</span>.     The proof is by induction on the size of the set of objects <span class="math notranslate nohighlight">\(X\)</span>.   The base case is when <span class="math notranslate nohighlight">\(|X|=1\)</span>. In this case,  <span class="math notranslate nohighlight">\(X=\{a\}\)</span> for some object <span class="math notranslate nohighlight">\(a\)</span>.  If <span class="math notranslate nohighlight">\(R\)</span> is a transitive and complete ordering on <span class="math notranslate nohighlight">\(X\)</span>, then <span class="math notranslate nohighlight">\(R=\{(a,a)\}\)</span>.     Then, <span class="math notranslate nohighlight">\(u_R(a)=0\)</span> (any real number would work here) clearly represents <span class="math notranslate nohighlight">\(R\)</span>.    The induction hypothesis is: if <span class="math notranslate nohighlight">\(|X|=n\)</span>, then any preference ordering on <span class="math notranslate nohighlight">\(X\)</span> is representable.    Suppose that <span class="math notranslate nohighlight">\(|X|=n+1\)</span> and <span class="math notranslate nohighlight">\(R\)</span> is a preference ordering on <span class="math notranslate nohighlight">\(X\)</span>.  Then, <span class="math notranslate nohighlight">\(X=X'\cup \{a\}\)</span> for some object <span class="math notranslate nohighlight">\(a\)</span>, where <span class="math notranslate nohighlight">\(|X'|=n\)</span>.  Note that the <em>restriction</em> of <span class="math notranslate nohighlight">\(R\)</span> to <span class="math notranslate nohighlight">\(X'\)</span>, denoted <span class="math notranslate nohighlight">\(R'\)</span>, is a preference ordering on <span class="math notranslate nohighlight">\(X'\)</span> (If <span class="math notranslate nohighlight">\(R\)</span> is a relation on <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\subseteq X\)</span>, then <span class="math notranslate nohighlight">\(R_Y\subseteq Y\times Y\)</span> is the restriction of <span class="math notranslate nohighlight">\(R\)</span> to <span class="math notranslate nohighlight">\(Y\)</span> provided for all <span class="math notranslate nohighlight">\(a,b\in Y\)</span>, <span class="math notranslate nohighlight">\(a\mathrel{R_Y} b\)</span> iff <span class="math notranslate nohighlight">\(a\mathrel{R} b\)</span>).  By the induction hypothesis, <span class="math notranslate nohighlight">\(R'\)</span> is representable by a utility function <span class="math notranslate nohighlight">\(u_{R'}:X'\rightarrow \mathbb{R}\)</span>.  We will show how to extend <span class="math notranslate nohighlight">\(u_{R'}\)</span> to a utility function <span class="math notranslate nohighlight">\(u_{R}:X\rightarrow \mathbb{R}\)</span> that represents <span class="math notranslate nohighlight">\(R\)</span>.  For all <span class="math notranslate nohighlight">\(b\in X'\)</span>, let <span class="math notranslate nohighlight">\(u_R(b)=u_{R'}(b)\)</span>.  For the object <span class="math notranslate nohighlight">\(a\)</span> (the unique object in <span class="math notranslate nohighlight">\(X\)</span> but not in <span class="math notranslate nohighlight">\(X'\)</span>), there are four cases:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(a P_R b\)</span> for all <span class="math notranslate nohighlight">\(b\in X'\)</span>.   Let <span class="math notranslate nohighlight">\(u_R(a)=\max\{u_{R'}(b)\ |\ b\in X'\}+1\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(b P_R a\)</span> for all <span class="math notranslate nohighlight">\(b\in X'\)</span>.  Let <span class="math notranslate nohighlight">\(u_R(a)=\min\{u_{R'}(b)\ |\ b\in X'\}-1\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(a I_R b\)</span> for some <span class="math notranslate nohighlight">\(b\in X'\)</span>.    Let <span class="math notranslate nohighlight">\(u_R(a)=u_{R'}(b)\)</span>.</p></li>
+<li><p>There are <span class="math notranslate nohighlight">\(b_1, b_2\in X'\)</span> such that <span class="math notranslate nohighlight">\(b_1 P_R a P_R b_2\)</span>.  Let <span class="math notranslate nohighlight">\(u_R(a)=\frac{u_{R'}(b_1)+ u_{R'}(b_2)}{2}\)</span>.</p></li>
+</ol>
+<p>Then, it is straightforward to show that <span class="math notranslate nohighlight">\(u_R:X\rightarrow\mathbb{R}\)</span> represents <span class="math notranslate nohighlight">\(R\)</span> (the details are left to the reader).</p>
+</div>
+<p>The above proof can be extended to relations on infinite sets <span class="math notranslate nohighlight">\(X\)</span>.   However, additional technical assumptions are needed.   It is beyond the scope of this article to discuss these technicalities here.</p>
+<p>It is not hard to see that if a preference relation is representable by a utility function, then it is representable by  <em>infinitely</em> many different utility functions.  To make this more precise, say that a  function <span class="math notranslate nohighlight">\(f:\mathbb{R}\rightarrow\mathbb{R}\)</span> is  monotone provided that for all <span class="math notranslate nohighlight">\(r, r'\in\mathbb{R}\)</span>, if <span class="math notranslate nohighlight">\(r\ge  r'\)</span> then <span class="math notranslate nohighlight">\(f(r)\ge  f(r')\)</span>.</p>
+<div class="observation admonition">
+<p class="admonition-title">Fact</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(R\)</span> is representable by a utility function <span class="math notranslate nohighlight">\(u_R\)</span> and <span class="math notranslate nohighlight">\(f:\mathbb{R}\rightarrow\mathbb{R}\)</span> is a monotone function.   Then, <span class="math notranslate nohighlight">\(f\circ u_R\)</span> also represents <span class="math notranslate nohighlight">\(R\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Show proof.</p>
+<p>The proof is immediate from the definitions.   Suppose that <span class="math notranslate nohighlight">\(a,b\in X\)</span>.   Then,  <span class="math notranslate nohighlight">\(aR b\)</span> iff <span class="math notranslate nohighlight">\(u_R(a)\le u_R(b)\)</span> (since <span class="math notranslate nohighlight">\(u\)</span> represents <span class="math notranslate nohighlight">\(R\)</span>) iff <span class="math notranslate nohighlight">\(f(u_R(a))\ge f(u_R(b))\)</span> (since <span class="math notranslate nohighlight">\(f\)</span> is monotone).</p>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Suppose that <span class="math notranslate nohighlight">\(X=\{a,b,c,d\}\)</span> and <span class="math notranslate nohighlight">\(R\)</span> is the following preference relation:
+<span class="math notranslate nohighlight">\(b P_R a I_R c P_R d\)</span>.  Find two utility functions that represent this preference relation.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./decision-theory"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="choice.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Choice Functions</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="lotteries-expected-utility.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Lotteries and Expected Utility</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eric Pacuit<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: decision-theory/decision-theory
+  sections:
+  - file: decision-theory/preferences
+  - file: decision-theory/choice
+  - file: decision-theory/utility
+  - file: decision-theory/lotteries-expected-utility
+  - file: decision-theory/vnm
+- file: mathematical-background/math-background
+  sections:
+  - file: mathematical-background/sets
+  - file: mathematical-background/relations
+  - file: mathematical-background/functions

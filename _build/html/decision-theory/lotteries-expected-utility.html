@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotteries and Expected Utility &#8212; Notes on Rational Choice Theory</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="von Neumann-Morgenstern Theorem" href="vnm.html" />
+    <link rel="prev" title="Utility" href="utility.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Notes on Rational Choice Theory</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Overview
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="decision-theory.html">
+   Decision Theory
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="preferences.html">
+     Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="choice.html">
+     Choice Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="utility.html">
+     Utility
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Lotteries and Expected Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vnm.html">
+     von Neumann-Morgenstern Theorem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../mathematical-background/math-background.html">
+   Mathematical Background
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/sets.html">
+     Sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/relations.html">
+     Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mathematical-background/functions.html">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/decision-theory/lotteries-expected-utility.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="lotteries-and-expected-utility">
+<h1>Lotteries and Expected Utility<a class="headerlink" href="#lotteries-and-expected-utility" title="Permalink to this headline">¶</a></h1>
+<p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> is a finite set.  A <strong>probability function</strong> on <span class="math notranslate nohighlight">\(X\)</span> is a function <span class="math notranslate nohighlight">\(p:X\rightarrow [0,1]\)</span> such that <span class="math notranslate nohighlight">\(\sum_{x\in X} p(x)=1\)</span>.   If <span class="math notranslate nohighlight">\(S\subseteq X\)</span>, then <span class="math notranslate nohighlight">\(p(S)=\sum_{x\in S} p(x)\)</span>.<a class="footnote-reference brackets" href="#f1" id="id1">1</a></p>
+<p>In the remainder of this section, elements of <span class="math notranslate nohighlight">\(X\)</span> are called <em>prizes</em>, or <em>outcomes</em>.</p>
+<dl class="simple myst">
+<dt>Lottery</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(Y=\{x_1,\ldots, x_n\}\)</span> is a set of <span class="math notranslate nohighlight">\(n\)</span> elements from <span class="math notranslate nohighlight">\(X\)</span>.   A lottery on <span class="math notranslate nohighlight">\(Y\)</span> is denoted <span class="math notranslate nohighlight">\([x_1:p_1,x_2:p_2,\ldots, x_n:p_n]\)</span> where <span class="math notranslate nohighlight">\(\sum_{i=1}^n p_i=1\)</span>.</p>
+</dd>
+</dl>
+<p>We have defined lotteries for any subset of a fixed set <span class="math notranslate nohighlight">\(X\)</span>.   Without loss of generality, we can restrict attention to all lotteries on <span class="math notranslate nohighlight">\(X\)</span>.   For instance, suppose that <span class="math notranslate nohighlight">\(X=\{x_1,\ldots, x_n,y_1,\ldots, y_m\}\)</span> and <span class="math notranslate nohighlight">\(L\)</span> is a lottery on <span class="math notranslate nohighlight">\(Y=\{x_1,\ldots, x_n\}\)</span>.   That is, <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span>.   This lottery can be  extended to a lottery <span class="math notranslate nohighlight">\(L'\)</span> over <span class="math notranslate nohighlight">\(X\)</span> as follows:</p>
+<div class="math notranslate nohighlight">
+\[
+L'=[x_1:p_1,\ldots, x_n:p_n, y_1:0,\ldots, y_m:0].
+\]</div>
+<p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> is a finite set and let <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> be the set of lotteries on  <span class="math notranslate nohighlight">\(X\)</span>. There are two technical issues that need to be addressed.</p>
+<ol class="simple">
+<li><p>We can identify elements <span class="math notranslate nohighlight">\(x\in X\)</span> with lotteries <span class="math notranslate nohighlight">\([x:1]\)</span>.    Thus, we may abuse notation and  say that “<span class="math notranslate nohighlight">\(X\)</span> is contained in <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>”.</p></li>
+<li><p>We   need the notion of a compound lottery:</p></li>
+</ol>
+<dl class="simple myst">
+<dt>Compound Lottery</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(L_1, \ldots, L_n\)</span> are lotteries. Then, <span class="math notranslate nohighlight">\([L_1:p_1,\ldots, L_n:p_n]\)</span> is <strong>compound lottery</strong>, where <span class="math notranslate nohighlight">\(\sum_{i=1}^n p_i=1\)</span>.</p>
+</dd>
+</dl>
+<p>We are interested in decision makers that have preferences over the set of lotteries <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>.  Suppose that <span class="math notranslate nohighlight">\((P, I)\)</span> is a rational preference  on <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>.  We start by imposing the following axiom that will simplify our study of preferences over lotteries.</p>
+<dl class="simple myst">
+<dt>Axiom: Simplifying lotteries</dt><dd><p>Suppose that <span class="math notranslate nohighlight">\((P, I)\)</span> is a rational preference on <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> and that <span class="math notranslate nohighlight">\([L_1:p_1,\ldots, L_n,p_n]\)</span> is a compound lottery, where for each <span class="math notranslate nohighlight">\(i=1,\ldots, n\)</span>, we have <span class="math notranslate nohighlight">\(L_i=[x_1:p_1^i,\ldots, x_n:p_n^i]\)</span>.  Then,</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[
+[L_1:p_1,\ldots, L_n,p_n]\mathrel{I} [x_1:(p_1p_1^1+ p_2p_1^2 + \cdots p_np_1^n),\ldots, x_1:(p_1p_n^1+ p_2p_n^2 + \cdots p_np_n^n)]
+\]</div>
+<p>This constraint on rational preferences over lotteries decision makers do not get any utility from the “thrill of gambling”. That is, what matters to the decision maker is how likely she is to receive prizes that she prefers.
+For example, suppose that    <span class="math notranslate nohighlight">\(L_1=[x:1]\)</span> and <span class="math notranslate nohighlight">\(L_2=[y_1:0.2, y_2:0.4, y_3:0.4]\)</span>.   Then, the decision maker is assumed to be indifferent between the compound lottery <span class="math notranslate nohighlight">\(L_3=[L_1:0.3, L_2:0.7]\)</span> and the simple lottery <span class="math notranslate nohighlight">\(L_4=[x:0.3, y_1:0.14, y_2:0.28, y_3:0.28]\)</span>.   This can be pictured as follows:</p>
+<p><img alt="example" src="../_images/compound-lottery-ex.jpg" /></p>
+<p>The goal is to show that any preference relation can be represented by a <em>linear</em> utility function:</p>
+<p>One way to compare lotteries is to assign a number of each lottery and rank the lotteries according to the number assigned to them.   That is, for a set of lotteries <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> and a function <span class="math notranslate nohighlight">\(V:\mathcal{L}\rightarrow\mathbb{R}\)</span> assigning a real number of teach lottery, define the relation <span class="math notranslate nohighlight">\(R_V\)</span> as follows: for all <span class="math notranslate nohighlight">\(L, L'\in \mathcal{L}\)</span>, <span class="math notranslate nohighlight">\(L\mathrel{R_V} L'\)</span> if, and only if, <span class="math notranslate nohighlight">\(V(L)\ge V(L')\)</span>.</p>
+<p>One way to define a function <span class="math notranslate nohighlight">\(V:\mathcal{L}\rightarrow\mathbb{R}\)</span> for the set of lotteries <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> on <span class="math notranslate nohighlight">\(X\)</span> is to start with a utility function on the set of prizes <span class="math notranslate nohighlight">\(u:X\rightarrow\mathbb{R}\)</span> and then  for each <span class="math notranslate nohighlight">\(L\in\mathcal{L}(X)\)</span> define <span class="math notranslate nohighlight">\(V(L)\)</span> as some function combining the probabilities in <span class="math notranslate nohighlight">\(L\)</span> with the utility of the prizes in <span class="math notranslate nohighlight">\(L\)</span>.</p>
+<p>For example, let <span class="math notranslate nohighlight">\(u:X\rightarrow\mathbb{R}\)</span> be a utility function on <span class="math notranslate nohighlight">\(X\)</span>.   The following are examples of different ways to assign a value to lotteries:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(V_1:\mathcal{L}\rightarrow\mathbb{R}\)</span> is the function where for each <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span>,<br/> <span class="math notranslate nohighlight">\(V_1(L) = \min\{u(x_1), \ldots, u(x_n)\}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(V_2:\mathcal{L}\rightarrow\mathbb{R}\)</span> is the function where for each <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span>,<br/> <span class="math notranslate nohighlight">\(V_2(L) = \sum_{i=1}^n u(x_i)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(V_3:\mathcal{L}\rightarrow\mathbb{R}\)</span> is the function where for each <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span>, <br/> <span class="math notranslate nohighlight">\(V_3(L) = \sum_{i=1}^n p_i * u(x_i)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(V_4:\mathcal{L}\rightarrow\mathbb{R}\)</span> is the function where for each <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span>, <br/> <span class="math notranslate nohighlight">\(V_4(L) = (\sum_{i=1}^n p_i * u(x_i)) + 0.2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(V_5:\mathcal{L}\rightarrow\mathbb{R}\)</span> is the function where for each <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span>,<br/> <span class="math notranslate nohighlight">\(V_5(L) = (\sum_{i=1}^n p_i * 2 * u(x_i)) + 0.2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(V_6:\mathcal{L}\rightarrow\mathbb{R}\)</span> is the function where for each <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span>,<br/> <span class="math notranslate nohighlight">\(V_6(L) = (\sum_{i=1}^n p_i * u(x_i))^4\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(V_7:\mathcal{L}\rightarrow\mathbb{R}\)</span> is the function where for each <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span>, <br/> <span class="math notranslate nohighlight">\(V_7(L) = (\sum_{i=1}^n p_i^2 * u(x_i))\)</span></p></li>
+</ol>
+<p>We can also define functions that treat sure-things different than other lotteries: Let <span class="math notranslate nohighlight">\(V_8:\mathcal{L}\rightarrow\mathbb{R}\)</span> be  the function where:</p>
+<p><span class="math notranslate nohighlight">\(V_8(L) = u(z)\)</span> if <span class="math notranslate nohighlight">\(L\)</span> is equivalent to <span class="math notranslate nohighlight">\([z:1]\)</span> for some <span class="math notranslate nohighlight">\(z\in X\)</span>  or <span class="math notranslate nohighlight">\(V_8(L) = 
+\sum_{i=1}^n p_i u(x_i) + 0.2\)</span>   if <span class="math notranslate nohighlight">\(L=[x_1:p_1,\ldots, x_n:p_n]\)</span> with at least two non-zero probabilities.</p>
+<p>Note that function <span class="math notranslate nohighlight">\(V_3\)</span> is the <strong>expected utility</strong> of lotteries with respect to the utility function <span class="math notranslate nohighlight">\(u\)</span>.  The key property of the expected utility valuation function is that it is linear:</p>
+<dl class="simple myst">
+<dt>Linear Utility Function</dt><dd><p>A utility function <span class="math notranslate nohighlight">\(u:\mathcal{L}\rightarrow \mathbb{R}\)</span> is  <strong>linear</strong> provided for all <span class="math notranslate nohighlight">\(L=[L_1:p_1,\ldots, L_n:p_n]\in\mathcal{L}\)</span>,</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[
+u(L)=\sum_{i=1}^n p_i u(L_i)
+\]</div>
+<p>The functions <span class="math notranslate nohighlight">\(V_3, V_4\)</span> and <span class="math notranslate nohighlight">\(V_5\)</span> are all linear.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>There are a number of mathematical details about probability measures that we are glossing over here.  Our discussion in this section is greatly simplified since we assume that the set of objects <span class="math notranslate nohighlight">\(X\)</span> is finite.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./decision-theory"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="utility.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Utility</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="vnm.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">von Neumann-Morgenstern Theorem</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eric Pacuit<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

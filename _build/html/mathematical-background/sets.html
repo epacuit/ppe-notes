@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sets &#8212; Notes on Rational Choice Theory</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Relations" href="relations.html" />
+    <link rel="prev" title="Mathematical Background" href="math-background.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Notes on Rational Choice Theory</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Overview
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../decision-theory/decision-theory.html">
+   Decision Theory
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/preferences.html">
+     Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/choice.html">
+     Choice Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/utility.html">
+     Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/lotteries-expected-utility.html">
+     Lotteries and Expected Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/vnm.html">
+     von Neumann-Morgenstern Theorem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="math-background.html">
+   Mathematical Background
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="relations.html">
+     Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions.html">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/mathematical-background/sets.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#operations-on-sets">
+   Operations on Sets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="sets">
+<h1>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h1>
+<p>We often groups things together. Everyone in this class, your group of friends, your family.  These are all collections of people.    Set theory is a mathematical language to reason about collections, called sets.</p>
+<dl class="simple myst">
+<dt>Set</dt><dd><p>Any collection of objects.   It is assumed that there is a <em>universal set</em>, called the  <em>domain of discourse</em>, so that a set is a collection of objects from the universal set.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In these notes, sets are denoted with uppercase letters, and elements of sets with lowercase letters.  There is no standard notation for sets and elements.  For instance, some texts may use lowercase letters to denote sets.</p>
+</div>
+<p>There are two ways to write down a set:</p>
+<ol class="simple">
+<li><p>List all the items in the set.  The items should be separated by a comma and the list should be written between curly brackets: ‘<span class="math notranslate nohighlight">\(\}\)</span>’ and ‘<span class="math notranslate nohighlight">\(\{\)</span>‘.  For example, the  first 5 letters of the alphabet is the set <span class="math notranslate nohighlight">\(\{a, b, c, d, e\}\)</span>.</p></li>
+<li><p>Define a property that  <em>all</em> items in the set have in common.  For example,   the set of all positive integers is <span class="math notranslate nohighlight">\(\{x\ |\ x \text{ is an integer} \text{ and } x\geq 0  \}\)</span>.  This is read “the set of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\)</span> is an integer and <span class="math notranslate nohighlight">\(x\)</span> is greater than or equal to zero”.</p></li>
+</ol>
+<dl class="simple myst">
+<dt>Element</dt><dd><p>A member of a set.   When   <span class="math notranslate nohighlight">\(x\)</span> is an element of the set <span class="math notranslate nohighlight">\(A\)</span>, we write <span class="math notranslate nohighlight">\(x\in A\)</span>.</p>
+</dd>
+<dt>Subset</dt><dd><p>A set <span class="math notranslate nohighlight">\(A\)</span> is a  <strong>subset</strong> of a set <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\subseteq B\)</span>, provided that every element of <span class="math notranslate nohighlight">\(A\)</span> is also an element of <span class="math notranslate nohighlight">\(B\)</span>.</p>
+</dd>
+</dl>
+<p>The set that contains no elements is called the <strong>emptyset</strong>, or <strong>null set</strong>.   We write <span class="math notranslate nohighlight">\(\varnothing\)</span> to denote the emptyset.</p>
+<p>We use the phrase “…is contained in” when talking about both elements and subsets.   If <span class="math notranslate nohighlight">\(A=\{1,2,3\}\)</span>, then it is common to say that “<span class="math notranslate nohighlight">\(A\)</span> contains <span class="math notranslate nohighlight">\(1\)</span>” or “<span class="math notranslate nohighlight">\(1\)</span> is contained in <span class="math notranslate nohighlight">\(A\)</span>”.   Something that can be confusing for beginners is that it is also common to say that “the set <span class="math notranslate nohighlight">\(\{1,2\}\)</span> is contained in <span class="math notranslate nohighlight">\(A\)</span>” since each element in <span class="math notranslate nohighlight">\(\{1, 2\}\)</span> is contained in <span class="math notranslate nohighlight">\(A\)</span>.</p>
+<div class="caution admonition">
+<p class="admonition-title">Caution</p>
+<p>It is important to remember that the subset notation “<span class="math notranslate nohighlight">\(A\subseteq B\)</span>” should only be used when <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are both sets. For example, if <span class="math notranslate nohighlight">\(X=\{1, 2, 3 \}\)</span>, then it is incorrect to write “<span class="math notranslate nohighlight">\(1\subseteq X\)</span>”  since <span class="math notranslate nohighlight">\(1\)</span> is not a set.</p>
+</div>
+<p>Note that it is possible for  a set to contain an element that is itself a set.   That is, a set  can  contain other sets as members.  For instance, the set <span class="math notranslate nohighlight">\(X=\{a, b, c\}\)</span> contains three elements (i.e., <span class="math notranslate nohighlight">\(a\in X\)</span>, <span class="math notranslate nohighlight">\(b\in X\)</span> and <span class="math notranslate nohighlight">\(c\in X\)</span>), but  <span class="math notranslate nohighlight">\(Y=\{a, \{b, c\}\}\)</span> contains two elements (<span class="math notranslate nohighlight">\(a\in Y\)</span> and <span class="math notranslate nohighlight">\(\{b,c\}\in Y\)</span>).</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Can a set contain an element that is also a subset?</p>
+<p>Let <span class="math notranslate nohighlight">\(Z=\{a, \{a\}\}\)</span>.   Then, <span class="math notranslate nohighlight">\(\{a\}\in Z\)</span>  and <span class="math notranslate nohighlight">\(\{a\}\subseteq Z\)</span> (since <span class="math notranslate nohighlight">\(a\in Z\)</span>).   So, <span class="math notranslate nohighlight">\(\{a\}\)</span> is both an element of <span class="math notranslate nohighlight">\(Z\)</span> and a subset of <span class="math notranslate nohighlight">\(Z\)</span>.</p>
+</div>
+<p>Given a set <span class="math notranslate nohighlight">\(A\)</span>, we will often be interested in the set of all subsets of <span class="math notranslate nohighlight">\(A\)</span>:</p>
+<dl class="simple myst">
+<dt>Powerset</dt><dd><p>The <strong>power set</strong> of a set <span class="math notranslate nohighlight">\(A\)</span> is the set of all of <span class="math notranslate nohighlight">\(A\)</span>’s subsets.  If <span class="math notranslate nohighlight">\(A\)</span> is a set, then the power set of <span class="math notranslate nohighlight">\(A\)</span> is the set <span class="math notranslate nohighlight">\(\wp(A)=\{B\ |\ B\subseteq A\}\)</span>.</p>
+</dd>
+</dl>
+<p>Note that <span class="math notranslate nohighlight">\(\varnothing\in\wp(A)\)</span> for any set <span class="math notranslate nohighlight">\(A\)</span>.    To illustrate the power set operation, suppose that <span class="math notranslate nohighlight">\(A=\{1, 2, 3\}\)</span>.   Then the power set of <span class="math notranslate nohighlight">\(A\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[\wp(A)=\{\varnothing, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\}, \{1,2,3\}\}.\]</div>
+<center>
+<iframe width="600" height="400" src="https://www.youtube.com/embed/LrLFteztomE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<div class="section" id="operations-on-sets">
+<h2>Operations on Sets<a class="headerlink" href="#operations-on-sets" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>Venn diagram</strong> is a picture that represents all the possible relationships between sets. For example, the following pictures represents all the possible relationships between two sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>:</p>
+<div class="figure align-default" id="venn1">
+<a class="reference internal image-reference" href="../_images/venn1.png"><img alt="../_images/venn1.png" src="../_images/venn1.png" style="height: 180px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">A Venn diagram for <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> with the different regions labeled.</span><a class="headerlink" href="#venn1" title="Permalink to this image">¶</a></p>
+</div>
+<p>There are 4 distinct regions in the above picture:</p>
+<ul class="simple">
+<li><p>region <span class="math notranslate nohighlight">\(1\)</span> is for items that are not in <span class="math notranslate nohighlight">\(A\)</span> and not in  <span class="math notranslate nohighlight">\(B\)</span>;</p></li>
+<li><p>region <span class="math notranslate nohighlight">\(2\)</span> is for items in <span class="math notranslate nohighlight">\(A\)</span> that are not in <span class="math notranslate nohighlight">\(B\)</span>;</p></li>
+<li><p>region <span class="math notranslate nohighlight">\(3\)</span> is for items in both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>; and</p></li>
+<li><p>region <span class="math notranslate nohighlight">\(4\)</span> is for items that are not in <span class="math notranslate nohighlight">\(A\)</span> and are in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+</ul>
+<p>It is important to remember that in Venn diagrams, some of the regions might be empty, i.e., the region does not contain any elements.   For example, if <span class="math notranslate nohighlight">\(A\subseteq B\)</span>, region <span class="math notranslate nohighlight">\(2\)</span> does not contain any elements (since every element in <span class="math notranslate nohighlight">\(A\)</span> is in <span class="math notranslate nohighlight">\(B\)</span>).  To represent this subset relation between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> we can draw the <span class="math notranslate nohighlight">\(A\)</span> region inside the <span class="math notranslate nohighlight">\(B\)</span> region: <a class="footnote-reference brackets" href="#euler" id="id1">1</a></p>
+<div class="figure align-default" id="subset">
+<a class="reference internal image-reference" href="../_images/subset.png"><img alt="../_images/subset.png" src="../_images/subset.png" style="height: 180px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text"><span class="math notranslate nohighlight">\(A\subseteq B\)</span></span><a class="headerlink" href="#subset" title="Permalink to this image">¶</a></p>
+</div>
+<p>There are a number of  ways to combine sets to form new sets.</p>
+<dl class="glossary">
+<dt id="term-Union">Union<a class="headerlink" href="#term-Union" title="Permalink to this term">¶</a></dt><dd><p>Suppose that  <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are two sets.   The <strong>union</strong> of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\cup B\)</span>,  is the set  <span class="math notranslate nohighlight">\(A\cup B=\{x\ |\ x\in A\text{ or } x\in B\}.\)</span>   More generally, if <span class="math notranslate nohighlight">\(\mathcal{S}\)</span> is any collection of sets, then</p>
+<div class="math notranslate nohighlight">
+\[
+\bigcup \mathcal{S} = \{x\ |\ x\in A \mbox{ for some } A\in\mathcal{S}\}.
+\]</div>
+</dd>
+</dl>
+<p>The union of two sets can be pictured as follows:</p>
+<div class="figure align-default" id="union">
+<a class="reference internal image-reference" href="../_images/union.png"><img alt="../_images/union.png" src="../_images/union.png" style="height: 180px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">The gray shaded region is <span class="math notranslate nohighlight">\(A\cup B\)</span>.</span><a class="headerlink" href="#union" title="Permalink to this image">¶</a></p>
+</div>
+<p>The following examples illustrates the union of two sets.</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(A=\{1,2,3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{a,b\}\)</span>, then <span class="math notranslate nohighlight">\(A\cup B=\{1,2,3,a,b\}\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A=\{1,2,3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{1,3,4\}\)</span>, then <span class="math notranslate nohighlight">\(A\cup B=\{ 1, 2, 3, 4\}\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A=\{1,2, 3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{\{1,3\}, 4\}\)</span>, then <span class="math notranslate nohighlight">\(A\cup B=\{ 1, 2, 3, \{1,3\}, 4\}\)</span>.</p></li>
+</ul>
+<dl class="glossary">
+<dt id="term-Intersection">Intersection<a class="headerlink" href="#term-Intersection" title="Permalink to this term">¶</a></dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are two sets.  The <strong>intersection</strong> of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\cap B\)</span>,  is the set <span class="math notranslate nohighlight">\(A\cap B=\{x\ |\ x\in A\text{ and } x\in B\}.\)</span>  More generally, if <span class="math notranslate nohighlight">\(\mathcal{S}\)</span> is any collection of sets, then</p>
+<div class="math notranslate nohighlight">
+\[
+\bigcap \mathcal{S} = \{x\ |\ x\in A \text{ for all $A\in\mathcal{S}$}\}.
+\]</div>
+</dd>
+</dl>
+<p>The intersection of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> can be pictured as follows:</p>
+<div class="figure align-default" id="intersection">
+<a class="reference internal image-reference" href="../_images/intersection.png"><img alt="../_images/intersection.png" src="../_images/intersection.png" style="height: 180px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">The gray shaded region is <span class="math notranslate nohighlight">\(A\cap B\)</span>.</span><a class="headerlink" href="#intersection" title="Permalink to this image">¶</a></p>
+</div>
+<p>The following examples illustrates the intersection of two sets.</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(A=\{1,2,3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{1\}\)</span>, then <span class="math notranslate nohighlight">\(A\cap B=\{1\}\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A=\{1,2, 3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{\{1,3\}, 2\}\)</span>, then <span class="math notranslate nohighlight">\(A\cap B=\{ 2\}\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A=\{1, 2\}\)</span> and <span class="math notranslate nohighlight">\(B=\{3, 4\}\)</span>, then <span class="math notranslate nohighlight">\(A\cap B=\varnothing\)</span>  (i.e., there are no elements in <span class="math notranslate nohighlight">\(A\cap B\)</span>).</p></li>
+</ul>
+<dl class="glossary">
+<dt id="term-Set-Difference">Set Difference<a class="headerlink" href="#term-Set-Difference" title="Permalink to this term">¶</a></dt><dd><p>The <strong>difference</strong> between two sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> (<span class="math notranslate nohighlight">\(A\)</span> minus <span class="math notranslate nohighlight">\(B\)</span>), denoted <span class="math notranslate nohighlight">\(A-B\)</span>  is all the elements in <span class="math notranslate nohighlight">\(A\)</span> but not in <span class="math notranslate nohighlight">\(B\)</span>.   That is, the difference between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> is the set</p>
+<div class="math notranslate nohighlight">
+\[
+A-B=\{x\ |\ x\in A\text{ and } x\not\in B\}.\]</div>
+</dd>
+</dl>
+<p>The difference  between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> can be pictured as follows:</p>
+<div class="figure align-default" id="setdiff">
+<a class="reference internal image-reference" href="../_images/setdiff.png"><img alt="../_images/setdiff.png" src="../_images/setdiff.png" style="height: 180px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">The gray shaded region is <span class="math notranslate nohighlight">\(A - B\)</span>.</span><a class="headerlink" href="#setdiff" title="Permalink to this image">¶</a></p>
+</div>
+<dl class="glossary">
+<dt id="term-Complement">Complement<a class="headerlink" href="#term-Complement" title="Permalink to this term">¶</a></dt><dd><p>The <strong>complement</strong>  of a set is the set of all elements not contained in that set.  Formally, the complement of the set <span class="math notranslate nohighlight">\(A\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[
+A^C=\{x\ |\ x\text{ is in the universal set and } x\not\in A\}.
+\]</div>
+</dd>
+</dl>
+<p>The following examples illustrates the operations of set difference and complement:</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(A=\{1,2, 3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{1, 2, 4\}\)</span>, then <span class="math notranslate nohighlight">\(A - B=\{ 3\}\)</span> and <span class="math notranslate nohighlight">\(B-A=\{4\}\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A=\{1,2,3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{1\}\)</span>, then <span class="math notranslate nohighlight">\(A - B=\{2, 3\}\)</span> and <span class="math notranslate nohighlight">\(B-A\)</span> is the empty set.</p></li>
+<li><p>If the universal set is   <span class="math notranslate nohighlight">\(\{0,1, 2, 3, 4, 5, 6, 7, 8, 9\}\)</span> and <span class="math notranslate nohighlight">\(A=\{1, 2, 3\}\)</span>, then <span class="math notranslate nohighlight">\(A^C=\{0, 4, 5, 6, 7, 8, 9\}\)</span>.</p></li>
+</ul>
+<dl class="glossary simple">
+<dt id="term-Symmetric-Difference">Symmetric Difference  <a class="headerlink" href="#term-Symmetric-Difference" title="Permalink to this term">¶</a></dt><dd><p>The <strong>symmetric difference</strong> of sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> is all the elements in either set  <em>but not in both</em>.  That is, it is the set <span class="math notranslate nohighlight">\((A-B)\cup (B-A)\)</span>.</p>
+</dd>
+</dl>
+<p>The symmetric difference is pictured as follows:</p>
+<div class="figure align-default" id="symdiff">
+<a class="reference internal image-reference" href="../_images/symdiff.png"><img alt="../_images/symdiff.png" src="../_images/symdiff.png" style="height: 180px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">The gray shaded region is <span class="math notranslate nohighlight">\((A - B) \cup (B-A)\)</span>.</span><a class="headerlink" href="#symdiff" title="Permalink to this image">¶</a></p>
+</div>
+<p>The following examples illustrates the operations of symmetric difference:</p>
+<ul class="simple">
+<li><p>The symmetric difference of <span class="math notranslate nohighlight">\(A=\{1,2, 3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{1, 2, 4\}\)</span>  is <span class="math notranslate nohighlight">\(\{ 3, 4\}\)</span>.</p></li>
+<li><p>The symmetric difference  <span class="math notranslate nohighlight">\(A=\{1,2,3\}\)</span> and <span class="math notranslate nohighlight">\(B=\{1\}\)</span> is <span class="math notranslate nohighlight">\(\{2, 3\}\)</span>.</p></li>
+</ul>
+<p>Finally, it will  be useful to introduce notation to represent the number of elements in a set.</p>
+<dl class="glossary simple">
+<dt id="term-Cardinality">Cardinality <a class="headerlink" href="#term-Cardinality" title="Permalink to this term">¶</a></dt><dd><p>The cardinality of a finite set <span class="math notranslate nohighlight">\(A\)</span>, denoted <span class="math notranslate nohighlight">\(|A|\)</span>,  is the total number of elements in <span class="math notranslate nohighlight">\(A\)</span>. The notion of cardinality can be applied to infinite sets as well.   However, a discussion of this is beyond the scope of these introductory notes.</p>
+</dd>
+</dl>
+<p>We conclude with the notation for some important sets:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Notation</p></th>
+<th class="text-align:left head"><p>Set</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mathbb{N}\)</span></p></td>
+<td class="text-align:left"><p>The set of all non-negative integers <span class="math notranslate nohighlight">\(\{0, 1, 2, \ldots\}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mathbb{Z}\)</span></p></td>
+<td class="text-align:left"><p>The set of all  integers <span class="math notranslate nohighlight">\(\{\ldots, -2, -1, 0, 1, 2, \ldots\}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></td>
+<td class="text-align:left"><p>The set of all real numbers</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\([0,1]\)</span></p></td>
+<td class="text-align:left"><p>The set of all real numbers between (and including) <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(1\)</span>:  <span class="math notranslate nohighlight">\([0,1]=\{x\mid x\in \mathbb{R}, 0\le x\le 1\}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\((0,1)\)</span></p></td>
+<td class="text-align:left"><p>The set of all real numbers strictly between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(1\)</span>:  <span class="math notranslate nohighlight">\((0,1)=\{x\mid x\in \mathbb{R}, 0 &lt;  x &lt; 1\}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></td>
+<td class="text-align:left"><p>The set of all rational numbers <span class="math notranslate nohighlight">\(\{x\mid x=\frac{a}{b}\)</span>, where <span class="math notranslate nohighlight">\(a, b\)</span> are integers<span class="math notranslate nohighlight">\(\}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>What is   <span class="math notranslate nohighlight">\(\wp(\emptyset)\)</span>?</p></li>
+<li><p>Explain why the following are true:</p>
+<ul class="simple">
+<li><p>For any sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(A\subseteq A\cup B\)</span> and <span class="math notranslate nohighlight">\(B\subseteq A\cup B\)</span>.</p></li>
+<li><p>For any sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(A\subseteq B\)</span> if, and only if, <span class="math notranslate nohighlight">\(A\cup B = B\)</span>.</p></li>
+</ul>
+</li>
+<li><p>Explain why the following are true:</p>
+<ul class="simple">
+<li><p>For 	 any sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(A\cap B\subseteq A\)</span> and <span class="math notranslate nohighlight">\(A\cap B\subseteq B\)</span>.</p></li>
+<li><p>For 	 any sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(A\subseteq B\)</span> if, and only if, <span class="math notranslate nohighlight">\(A\cap B = A\)</span>.</p></li>
+</ul>
+</li>
+<li><p>Explain why the following is true: For any sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(A-B=A\cap B^C\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A\)</span> has <span class="math notranslate nohighlight">\(n\)</span> elements, <span class="math notranslate nohighlight">\(|A|=n\)</span>, then how many elements are in <span class="math notranslate nohighlight">\(\wp(A)\)</span>?</p></li>
+</ol>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="euler"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Techincally, this is called a <strong>Euler</strong> diagram.   Eurler diagrams do not represent the regions that are known to be empty.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./mathematical-background"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="math-background.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Mathematical Background</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="relations.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Relations</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eric Pacuit<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maximal Elements &#8212; Notes on Rational Choice Theory</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Notes on Rational Choice Theory</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Overview
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../decision-theory/decision-theory.html">
+   Decision Theory
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/preferences.html">
+     Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/choice.html">
+     Choice Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/utility.html">
+     Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/lotteries-expected-utility.html">
+     Lotteries and Expected Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/vnm.html">
+     von Neumann-Morgenstern Theorem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="math-background.html">
+   Mathematical Background
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sets.html">
+     Sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="relations.html">
+     Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions.html">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/mathematical-background/max.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="maximal-elements">
+<h1>Maximal Elements<a class="headerlink" href="#maximal-elements" title="Permalink to this headline">¶</a></h1>
+<p>Consider the example of a relation where <span class="math notranslate nohighlight">\(X\)</span> is a set of people and <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is the relation where <span class="math notranslate nohighlight">\(a\mathrel{R}b\)</span> means that preson <span class="math notranslate nohighlight">\(a\)</span> is pointing at person <span class="math notranslate nohighlight">\(b\)</span>.  A person who is not being pointed at by anyone.<br />
+A person that is pointing to everyone.</p>
+<p>Given a set <span class="math notranslate nohighlight">\(X\)</span> and a relation <span class="math notranslate nohighlight">\(R\)</span> on <span class="math notranslate nohighlight">\(X\)</span>, one is often interested in identifying the “best” elements in <span class="math notranslate nohighlight">\(Y\subseteq X\)</span> according to <span class="math notranslate nohighlight">\(R\)</span>.</p>
+<dl class="glossary simple">
+<dt id="term-Maximal">Maximal<a class="headerlink" href="#term-Maximal" title="Permalink to this term">¶</a></dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> is a set,  <span class="math notranslate nohighlight">\(Y\subseteq X\)</span> and <span class="math notranslate nohighlight">\(R\)</span> is a relation on <span class="math notranslate nohighlight">\(X\)</span>.   An element <span class="math notranslate nohighlight">\(m\in Y\)</span> is <strong><span class="math notranslate nohighlight">\(R\)</span>-maximal</strong> in <span class="math notranslate nohighlight">\(Y\)</span> provided that for all <span class="math notranslate nohighlight">\(y\in Y\)</span>, if <span class="math notranslate nohighlight">\(y\mathrel{R} m\)</span>, then <span class="math notranslate nohighlight">\(y=m\)</span>.  Let <span class="math notranslate nohighlight">\(\max_R(Y)\)</span> denote the set of maximal elements of <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+</dd>
+</dl>
+<div class="note admonition">
+<p class="admonition-title">Equivalent Definition of Maximal Elements</p>
+<p>An equivalent definition of <span class="math notranslate nohighlight">\(\max_R(Y)\)</span> is</p>
+  <center>
+<p><span class="math notranslate nohighlight">\(\max_R(Y) = \{y\ |\  y\in Y\text{ there is no } z\in Y\text{ such that }z\ne y \text{ and }z\mathrel{R} y\}.\)</span></p>
+  </center>
+<p>So,   <span class="math notranslate nohighlight">\(y\in Y\)</span> is  maximal means that there is no element of <span class="math notranslate nohighlight">\(Y\)</span> that is <span class="math notranslate nohighlight">\(R\)</span>-related to <span class="math notranslate nohighlight">\(y\)</span>.</p>
+</div>
+<p>Suppose that <span class="math notranslate nohighlight">\(X=\{a, b, c\}\)</span>. The following examples illustrate the above definition:  following examples</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,b), (b, c), (a, c)\}\)</span>, then <span class="math notranslate nohighlight">\(\max_R(X)=\{a\}\)</span> (there is no <span class="math notranslate nohighlight">\(x\in X\)</span> such that <span class="math notranslate nohighlight">\(x\mathrel{R} a\)</span>).</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,b), (b, c), (c,a)\}\)</span>, then <span class="math notranslate nohighlight">\(\max_R(X)=\emptyset\)</span> (for each   <span class="math notranslate nohighlight">\(x\in X\)</span>, there is   <span class="math notranslate nohighlight">\(y\in X\)</span> such that <span class="math notranslate nohighlight">\(x\ne y\)</span> and <span class="math notranslate nohighlight">\(y\mathrel{R}x\)</span>).</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\emptyset\)</span>, then <span class="math notranslate nohighlight">\(\max_R(X)=\{a,b,c\}\)</span> (for each <span class="math notranslate nohighlight">\(x\in X\)</span>, there is no <span class="math notranslate nohighlight">\(y\in X\)</span> such that <span class="math notranslate nohighlight">\(y\mathrel{R} x\)</span>).</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,a), (b,b), (c,c)\}\)</span>, then <span class="math notranslate nohighlight">\(\max_R(X)=\{a,b,c\}\)</span> (for each <span class="math notranslate nohighlight">\(x\in X\)</span>, there is no <span class="math notranslate nohighlight">\(y\in X\)</span> such that <span class="math notranslate nohighlight">\(x\ne y\)</span> and  <span class="math notranslate nohighlight">\(y\mathrel{R} x\)</span>).</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a, b), (c, b) \}\)</span>, then <span class="math notranslate nohighlight">\(\max_R(X)=\{a,c\}\)</span> (for each <span class="math notranslate nohighlight">\(x\in\{a, c\}\)</span>, there is no <span class="math notranslate nohighlight">\(y\in X\)</span> such that <span class="math notranslate nohighlight">\(x\ne y\)</span> and <span class="math notranslate nohighlight">\(y\mathrel{R} x\)</span>).</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,b)\}\)</span>, then <span class="math notranslate nohighlight">\(\max_R(X)=\{a, c\}\)</span> (note that there is no element that is <span class="math notranslate nohighlight">\(R\)</span>-related to <span class="math notranslate nohighlight">\(c\)</span>)</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,b), (b,a)\}\)</span>, then <span class="math notranslate nohighlight">\(\max_R(X)=\{c\}\)</span> (again, note that there is no element that is <span class="math notranslate nohighlight">\(R\)</span>-related to <span class="math notranslate nohighlight">\(c\)</span>).</p></li>
+</ul>
+<p>The above examples illustrate that given a relation <span class="math notranslate nohighlight">\(R\)</span> on a set <span class="math notranslate nohighlight">\(S\)</span>, there may be no maximal elements in <span class="math notranslate nohighlight">\(S\)</span>, a unique maximal element of <span class="math notranslate nohighlight">\(S\)</span>, or more than one maximal element in <span class="math notranslate nohighlight">\(S\)</span>.  However, if a relation <span class="math notranslate nohighlight">\(R\)</span> is complete on <span class="math notranslate nohighlight">\(S\)</span> (i.e., all elements in <span class="math notranslate nohighlight">\(S\)</span> are related by <span class="math notranslate nohighlight">\(R\)</span> in some way), then there can   be at most one maximal element.   Furthermore, when  there is a unique maximal element in a set <span class="math notranslate nohighlight">\(S\)</span> for a relation <span class="math notranslate nohighlight">\(R\)</span>, this element is <span class="math notranslate nohighlight">\(R\)</span>-related to every element of <span class="math notranslate nohighlight">\(S\)</span>.<a class="footnote-reference brackets" href="#footnote1" id="id1">1</a> This motivates the following definition.</p>
+<dl class="glossary simple">
+<dt id="term-Maximum">Maximum<a class="headerlink" href="#term-Maximum" title="Permalink to this term">¶</a></dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> is a set,  <span class="math notranslate nohighlight">\(Y\subseteq X\)</span> and <span class="math notranslate nohighlight">\(R\)</span> is a relation on <span class="math notranslate nohighlight">\(X\)</span>.   An element <span class="math notranslate nohighlight">\(m\in Y\)</span> is the <strong><span class="math notranslate nohighlight">\(R\)</span>-maximum</strong> of <span class="math notranslate nohighlight">\(Y\)</span> provided that  for each <span class="math notranslate nohighlight">\(y\in Y\)</span>, either <span class="math notranslate nohighlight">\(m\mathrel{R} y\)</span> or <span class="math notranslate nohighlight">\(y=m\)</span>.</p>
+</dd>
+</dl>
+<p>So, an element is the maximum of <span class="math notranslate nohighlight">\(Y\)</span> provide that it is <span class="math notranslate nohighlight">\(R\)</span>-related to every other element in <span class="math notranslate nohighlight">\(Y\)</span>.  Note that if a set <span class="math notranslate nohighlight">\(Y\)</span> has an <span class="math notranslate nohighlight">\(R\)</span>-maximum, then it must be unique.  Every maximum element is maximal, but there may be maximal elements that are not maximum (see the above examples).</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(X=\{a, b, c\}\)</span>. Consider the following examples:</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,b), (b, c), (a, c)\}\)</span>, then <span class="math notranslate nohighlight">\(a\)</span> is the maximum in <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,b), (b, c), (c,a)\}\)</span>, then there is no maximum in <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(R=\{(a, b), (c, b) \}\)</span>,  then there is no maximum in <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,b)\}\)</span>, then there is no maximum in <span class="math notranslate nohighlight">\(X\)</span> (but <span class="math notranslate nohighlight">\(a\)</span> is the maximum of <span class="math notranslate nohighlight">\(Y=\{a,b\}\)</span>).</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(R=\{(a,a), (b,b), (c,c), (a,b), (b,c), (a,c)\}\)</span>, then <span class="math notranslate nohighlight">\(a\)</span> is the maximum in <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+</ul>
+ <br />
+<center>
+<iframe width="600" height="400" src="https://www.youtube.com/embed/NPLj-y37OLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<br />
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Is it possible to find a relation   that has a cycle and a non-empty set of maximal elements?   What about a relation that has a cycle, a non-empty set of maximal elements,  and is complete and transitive?</p></li>
+<li><p>Prove that if <span class="math notranslate nohighlight">\(R\)</span> is acyclic, then <span class="math notranslate nohighlight">\(\max_R(Y)\ne\emptyset\)</span>.   Is the converse true? (Why or why not?)</p></li>
+</ol>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="footnote1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Unless <span class="math notranslate nohighlight">\(S\)</span> contains a single element and <span class="math notranslate nohighlight">\(R\)</span> is empty. In this degenerate case, the only element of <span class="math notranslate nohighlight">\(S\)</span> is maximal.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./mathematical-background"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eric Pacuit<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

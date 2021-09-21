@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relations &#8212; Notes on Rational Choice Theory</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Functions" href="functions.html" />
+    <link rel="prev" title="Sets" href="sets.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Notes on Rational Choice Theory</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Overview
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../decision-theory/decision-theory.html">
+   Decision Theory
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/preferences.html">
+     Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/choice.html">
+     Choice Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/utility.html">
+     Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/lotteries-expected-utility.html">
+     Lotteries and Expected Utility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../decision-theory/vnm.html">
+     von Neumann-Morgenstern Theorem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="math-background.html">
+   Mathematical Background
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="sets.html">
+     Sets
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions.html">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/mathematical-background/relations.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="relations">
+<h1>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">¶</a></h1>
+<p>The order in which we list elements in a set does not matter.   That is, <span class="math notranslate nohighlight">\(\{a, b\}\)</span> is the same set as <span class="math notranslate nohighlight">\(\{b, a\}\)</span> (they both denote the set consisting of two elements ‘<span class="math notranslate nohighlight">\(a\)</span>’ and ‘<span class="math notranslate nohighlight">\(b\)</span>’).  There are many situations in which the order in which the elements appear is important.  When the order in which the elements appear matters, we use ‘<span class="math notranslate nohighlight">\((\)</span>‘ and `<span class="math notranslate nohighlight">\()\)</span>’.   For example,  <span class="math notranslate nohighlight">\((a,b)\)</span> is an   <strong>ordered pair</strong>, or <strong>tuple</strong>, of length 2.   The first component is <span class="math notranslate nohighlight">\(a\)</span> and the second component is <span class="math notranslate nohighlight">\(b\)</span>.    Since the order in which the elements appear matters, we have that <span class="math notranslate nohighlight">\((a, b)\ne (b,a)\)</span>.   More generally,  examples of tuples  of length 5 consisting of elements from the set <span class="math notranslate nohighlight">\(\{a, b, c, d, e\}\)</span> includes  <span class="math notranslate nohighlight">\((a, b, c, d, e)\)</span>,  <span class="math notranslate nohighlight">\((b, d, a, d, e)\)</span> or <span class="math notranslate nohighlight">\((a, a, b, b,  e)\)</span> (note that in the last tuple we allow the same element to be repeated).</p>
+<dl class="glossary simple">
+<dt id="term-Product">Product<a class="headerlink" href="#term-Product" title="Permalink to this term">¶</a></dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are non-empty sets.  The  <strong>product</strong> of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\times B\)</span>, is the set of ordered pairs where the first component comes from <span class="math notranslate nohighlight">\(A\)</span> and the second component comes from <span class="math notranslate nohighlight">\(B\)</span>.  That is,  <span class="math notranslate nohighlight">\(A\times B=\{(a,b)\ |\ a\in A\mbox{ and } b\in B\}.\)</span></p>
+</dd>
+</dl>
+<p>We call <span class="math notranslate nohighlight">\(X\times X\)</span>  the  <strong>cross-product</strong> of <span class="math notranslate nohighlight">\(X\)</span> with itself.   That is, it is the set of all pairs of elements from <span class="math notranslate nohighlight">\(X\)</span>.   For example, if <span class="math notranslate nohighlight">\(X=\{a, b, c\}\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[
+X\times X=\{(a,a), (a,b), (a,c), (b,a), (b,b), (b,c), (c,a), (c,b), (c,c)\}.
+\]</div>
+<p>If <span class="math notranslate nohighlight">\(X\)</span> is a set, we write <span class="math notranslate nohighlight">\(X^n\)</span> to denote the  <strong><span class="math notranslate nohighlight">\(n\)</span>-fold cross product</strong>.   That is</p>
+<div class="math notranslate nohighlight">
+\[
+X^n= \underbrace{X\times \cdots \times X}_{n\text{-times}}
+\]</div>
+<p>Suppose that  <span class="math notranslate nohighlight">\(X\)</span> is a set and that  <span class="math notranslate nohighlight">\(n\)</span> a positive integer. We define <span class="math notranslate nohighlight">\(X^n\)</span> as follows:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(X^1=X\)</span>; and</p></li>
+<li><p>for all <span class="math notranslate nohighlight">\(n&gt;1\)</span>, <span class="math notranslate nohighlight">\(X^{n+1}=X\times X^n\)</span>.</p></li>
+</ol>
+<p>So, <span class="math notranslate nohighlight">\(X^2 = X\times X\)</span> and <span class="math notranslate nohighlight">\(X^3\)</span> is the set of all tuples from <span class="math notranslate nohighlight">\(X\)</span> of length 3 (formally, <span class="math notranslate nohighlight">\(X^3= X\times (X\times X)\)</span>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An element of <span class="math notranslate nohighlight">\(X^n\)</span> is a tuple of length <span class="math notranslate nohighlight">\(n\)</span> where each element comes from <span class="math notranslate nohighlight">\(X\)</span>.  An element of <span class="math notranslate nohighlight">\(X^n\)</span> is also called a <strong>sequence</strong> of length <span class="math notranslate nohighlight">\(n\)</span>.</p>
+</div>
+<p>There are situations when one must consider products of sets which are themselves products.   For example, suppose that <span class="math notranslate nohighlight">\(X=\{a, b\}\)</span>.  Let <span class="math notranslate nohighlight">\(Y=X^2\)</span>.  Then, elements <span class="math notranslate nohighlight">\(Y^2\)</span> consists of tuples of length 2 where each component is a tuple of length 2 of elements from <span class="math notranslate nohighlight">\(X\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Y^2 = \{((a,a), (a,a)), ((a,a), (a,b)),  ((a,a), (b,a)), ((a,a), (b,b)),\\ 
+       ((a,b), (a,a)), ((a,b), (a,b)),  ((a,b), (b,a)),  ((a,b), (b,b)), \\  
+        ((b,a), (a,a)), ((b,a), (a,b)), ((b,a), (b,a)),  ((b,a), (b,b)),\\ 
+        ((b,b), (a,a)), ((b,b), (a,b)), ((b,b), (b,a)),  ((b,b), (b,b))\}   
+\end{split}\]</div>
+<p>An example of an element in <span class="math notranslate nohighlight">\(Y^3\)</span> is <span class="math notranslate nohighlight">\(((a,a), (b,a), (a,b))\)</span>.   Since <span class="math notranslate nohighlight">\(Y\)</span> has 4 elements, we have that <span class="math notranslate nohighlight">\(|Y^3| = 64\)</span>.  More generally, if <span class="math notranslate nohighlight">\(A\)</span> has <span class="math notranslate nohighlight">\(m\)</span> elements, <span class="math notranslate nohighlight">\(|A|=m\)</span>, then <span class="math notranslate nohighlight">\(|A^n|=m^n\)</span>.</p>
+<p>A  <strong>relation</strong> <span class="math notranslate nohighlight">\(R\)</span> on a set <span class="math notranslate nohighlight">\(X\)</span> is  a subset of <span class="math notranslate nohighlight">\(X\times X\)</span> (the set of pairs of elements from <span class="math notranslate nohighlight">\(X\)</span>).  Formally,  <span class="math notranslate nohighlight">\(R\)</span> is a relation on <span class="math notranslate nohighlight">\(X\)</span> means that   <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span>.  Relations are an important mathematical tool used throughout Philosophy, Political Science, and Economics.  You have already studied binary relations during your mathematical eduction: <span class="math notranslate nohighlight">\(=,\le, \ge, &lt;,\)</span> and <span class="math notranslate nohighlight">\(&gt;\)</span> are all relations on numbers (e.g., the natural numbers <span class="math notranslate nohighlight">\(\mathbb{N}\)</span>, real numbers <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>, rational numbers <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>, etc.) and  <span class="math notranslate nohighlight">\(\subseteq\)</span> is a relation on the power set of a set <span class="math notranslate nohighlight">\(S\)</span>.    For example,  the binary relation <span class="math notranslate nohighlight">\(\le \subseteq \mathbb{N}\times \mathbb{N}\)</span> is the set</p>
+<div class="math notranslate nohighlight">
+\[
+\{(a,b)\ |\ a,b\in\mathbb{N}\text{ and }  a\text{ is less than or equal to } b\}.
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is often convenient  to write <span class="math notranslate nohighlight">\(a\mathrel{R}b\)</span> for <span class="math notranslate nohighlight">\((a,b)\in R\)</span>.</p>
+</div>
+<center>
+<iframe width="600" height="400" src="https://www.youtube.com/embed/KacOh3TFruA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<br/>
+<p>Consider the following examples.    Suppose that <span class="math notranslate nohighlight">\(X\)</span> is the set of people in a room  and that everyone in the room is pointing at some person in the room.   A relation can be used to describe who is pointing at whom,  where for <span class="math notranslate nohighlight">\(a,b\in X\)</span>, <span class="math notranslate nohighlight">\(a\mathrel{R} b\)</span> means that person <span class="math notranslate nohighlight">\(a\)</span> is pointing at person <span class="math notranslate nohighlight">\(b\)</span>.    A second example   is  the “taller-than” relation, denoted <span class="math notranslate nohighlight">\(T\subseteq X\times X\)</span>,  where  <span class="math notranslate nohighlight">\(a\mathrel{T} b\)</span> means that person <span class="math notranslate nohighlight">\(a\)</span> is taller than person <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<p>Typically, we are interested in relations satisfying special properties.  Suppose that <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is a relation. Then, we define the following properties:</p>
+<dl class="glossary simple">
+<dt id="term-Reflexive">Reflexive<a class="headerlink" href="#term-Reflexive" title="Permalink to this term">¶</a></dt><dd><p><span class="math notranslate nohighlight">\(R\)</span> is  reflexive provided that  for all <span class="math notranslate nohighlight">\(a\in X\)</span>, <span class="math notranslate nohighlight">\(a\mathrel{R} a\)</span>.</p>
+</dd>
+<dt id="term-Irreflexive">Irreflexive<a class="headerlink" href="#term-Irreflexive" title="Permalink to this term">¶</a></dt><dd><p><span class="math notranslate nohighlight">\(R\)</span> is  irreflexive provided that for all <span class="math notranslate nohighlight">\(a\in X\)</span>,  it is not the case that <span class="math notranslate nohighlight">\(a\mathrel{R} a\)</span>.</p>
+</dd>
+<dt id="term-Connected">Connected<a class="headerlink" href="#term-Connected" title="Permalink to this term">¶</a></dt><dd><p><span class="math notranslate nohighlight">\(R\)</span> is connected provided that for all <span class="math notranslate nohighlight">\(a,b\in X\)</span>, <span class="math notranslate nohighlight">\(a\mathrel{R} b\)</span> or <span class="math notranslate nohighlight">\(b\mathrel{R}  a\)</span> (or both).  A connected relation is also called <strong>complete</strong>.</p>
+</dd>
+<dt id="term-Symmetric">Symmetric<a class="headerlink" href="#term-Symmetric" title="Permalink to this term">¶</a></dt><dd><p><span class="math notranslate nohighlight">\(R\)</span> is symmetric provided that for all <span class="math notranslate nohighlight">\(a,b\in X\)</span>, if <span class="math notranslate nohighlight">\(a\mathrel{R}  b\)</span> then  <span class="math notranslate nohighlight">\(b\mathrel{R}  a\)</span>.</p>
+</dd>
+<dt id="term-Asymmetric">Asymmetric<a class="headerlink" href="#term-Asymmetric" title="Permalink to this term">¶</a></dt><dd><p><span class="math notranslate nohighlight">\(R\)</span> is asymmetric provided that for all <span class="math notranslate nohighlight">\(a,b\in X\)</span>, if <span class="math notranslate nohighlight">\(a\mathrel{R}b\)</span> then it is not the case that <span class="math notranslate nohighlight">\(b\mathrel{R}  a\)</span>.</p>
+</dd>
+<dt id="term-Anti-symmetric">Anti-symmetric<a class="headerlink" href="#term-Anti-symmetric" title="Permalink to this term">¶</a></dt><dd><p><span class="math notranslate nohighlight">\(R\)</span> is anti-symmetric provided that for all <span class="math notranslate nohighlight">\(a,b \in X\)</span> if <span class="math notranslate nohighlight">\(a\mathrel{R}  b\)</span> and <span class="math notranslate nohighlight">\(b\mathrel{R}  a\)</span>, then <span class="math notranslate nohighlight">\(a=b\)</span>.</p>
+</dd>
+<dt id="term-Transitive">Transitive<a class="headerlink" href="#term-Transitive" title="Permalink to this term">¶</a></dt><dd><p><span class="math notranslate nohighlight">\(R\)</span> is  transitive provided that for all <span class="math notranslate nohighlight">\(a,b,c\in X\)</span>, if <span class="math notranslate nohighlight">\(a\mathrel{R}  b\)</span> and <span class="math notranslate nohighlight">\(b\mathrel{R}  c\)</span> then <span class="math notranslate nohighlight">\(a\mathrel{R}  c\)</span>.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As stated, connected implies reflexivity (let <span class="math notranslate nohighlight">\(a=b\)</span> in the above definition of connected).  Often,   connected is defined as  follows: for all  <em>distinct</em> <span class="math notranslate nohighlight">\(a,b\in X\)</span>, <span class="math notranslate nohighlight">\(a\mathrel{R}  b\)</span> or <span class="math notranslate nohighlight">\(b\mathrel{R}  a\)</span>.  In what follows, we will use the above stronger definition of connected where connected implies reflexivity.</p>
+</div>
+<p>Recall the example of a relation <span class="math notranslate nohighlight">\(R\)</span> that describes people pointing at other people in the room.   If <span class="math notranslate nohighlight">\(R\)</span> is reflexive, then this means everyone is pointing at themselves.    If <span class="math notranslate nohighlight">\(R\)</span> is irreflexive, then this means that no-one is pointing at themselves.  This example illustrates the fact that irrelexivity is <em>not</em> the negation of reflexivity.  That is, there are examples of relations that are neither reflexive nor irreflexive.   If <span class="math notranslate nohighlight">\(R\)</span> is complete, then this means that every person in the room is either pointing at somebody or being pointed at.     Symmetry of <span class="math notranslate nohighlight">\(R\)</span> means that   every person that is being pointed at is pointing back at the person pointing at them.  Asymmetry of <span class="math notranslate nohighlight">\(R\)</span> means that nobody is pointing back at the person pointing at them.  Similar to the relationship between reflexivity and irreflexivity, asymmetry is <em>not</em> the negation of symmetry.    Picturing transitivity of the relation <span class="math notranslate nohighlight">\(R\)</span> is a bit more complicated.   If the relation <span class="math notranslate nohighlight">\(R\)</span> is transitive, then   everyone is pointing at the person that is being pointed to by the person that they are pointing at.</p>
+<p>Suppose that <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is a relation.  We will often use the following shorthand to denote elements in the relation: If  <span class="math notranslate nohighlight">\(x_1, \ldots, x_n\in X\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[
+x_1\mathrel{R} x_2\mathrel{R}\cdots x_{n-1}\mathrel{R}x_n
+\]</div>
+<p>means that for all <span class="math notranslate nohighlight">\(i=1,\ldots, n-1\)</span>, <span class="math notranslate nohighlight">\((x_i,x_{i+1})\in R\)</span> or <span class="math notranslate nohighlight">\((x_i,x_j)\in R\)</span> for all <span class="math notranslate nohighlight">\(j&lt; i\)</span> if <span class="math notranslate nohighlight">\(R\)</span> is assumed to be transitive  (or <span class="math notranslate nohighlight">\(j\le i\)</span> if <span class="math notranslate nohighlight">\(R\)</span> is assumed to also be  reflexive).  For example, if <span class="math notranslate nohighlight">\(R\)</span> is transitive and reflexive, then  <span class="math notranslate nohighlight">\(a\mathrel{R} b\mathrel{R} c\)</span> means that <span class="math notranslate nohighlight">\(\{(a,a), (a,b), (b,b), (a,c), (b,c), (c,c)\}\subseteq R\)</span>.</p>
+<p>When thinking about relations, it is often helpful to draw a picture of the relation.   Suppose that  <span class="math notranslate nohighlight">\(X=\{a,b,c,d\}\)</span> and <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[
+R=\{(a,a), (b,a), (c,d), (a,c), (d,d)\}.
+\]</div>
+<p>Relations on <span class="math notranslate nohighlight">\(X\)</span> can be visualized as follows: Write down all the elements of <span class="math notranslate nohighlight">\(X\)</span> and draw an arrow from element <span class="math notranslate nohighlight">\(x\)</span> to element <span class="math notranslate nohighlight">\(y\)</span> when <span class="math notranslate nohighlight">\((x,y)\in R\)</span>:</p>
+<div class="figure align-default" id="relexample">
+<a class="reference internal image-reference" href="../_images/relexample.png"><img alt="../_images/relexample.png" src="../_images/relexample.png" style="height: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">A directed graph illustrating <span class="math notranslate nohighlight">\(R=\{(a,a), (b,a), (c,d), (a,c), (d,d)\}.\)</span></span><a class="headerlink" href="#relexample" title="Permalink to this image">¶</a></p>
+</div>
+<center>
+<iframe width="600" height="400" src="https://www.youtube.com/embed/Pg6QEOrcBM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<br />
+<p>We conclude this brief introduction with an important property of relations:</p>
+<dl class="glossary simple">
+<dt id="term-Cycle">Cycle <a class="headerlink" href="#term-Cycle" title="Permalink to this term">¶</a></dt><dd><p>Suppose that <span class="math notranslate nohighlight">\(R\subseteq X\times X\)</span>.  A (simple) cycle in    <span class="math notranslate nohighlight">\(R\)</span> is a sequence of distinct elements   <span class="math notranslate nohighlight">\((x_1, x_2,\ldots, x_n)\)</span> such that  <span class="math notranslate nohighlight">\(x_i\in X\)</span> for all <span class="math notranslate nohighlight">\(i=1, \ldots, n\)</span> and  for all <span class="math notranslate nohighlight">\(i=1, \ldots, n-1\)</span>, <span class="math notranslate nohighlight">\(\ x_i \mathrel{R} x_{i+1}\)</span>,  and <span class="math notranslate nohighlight">\(x_n\mathrel{R} x_1\)</span>.    A relation <span class="math notranslate nohighlight">\(R\)</span> is said to be  <strong>acyclic</strong> if there are no cycles.</p>
+</dd>
+</dl>
+<p>For example, suppose that <span class="math notranslate nohighlight">\(X=\{a,b,c, d\}\)</span> and <span class="math notranslate nohighlight">\(R=\{(a,c), (b,a), (b,d), (c, b), (d, c), (d, a)\}\)</span>. This relation can be pictured as follows:</p>
+<div class="figure align-default" id="cycles">
+<a class="reference internal image-reference" href="../_images/cycles.png"><img alt="../_images/cycles.png" src="../_images/cycles.png" style="height: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">The relation <span class="math notranslate nohighlight">\(R=\{(a,c), (b,a), (b,d), (c, b), (d, c), (d, a)\}\)</span>.</span><a class="headerlink" href="#cycles" title="Permalink to this image">¶</a></p>
+</div>
+<p>There are 3 cycles in  <span class="math notranslate nohighlight">\(R\)</span>:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\((a,c,b)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((c,b,d)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((c,b,d,a)\)</span>.</p></li>
+</ol>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Suppose that there are 5 people in a room.  Draw a picture of a situation where the people are pointing at each other and the relation that describes the situation is transitive.</p></li>
+<li><p>What properties do <span class="math notranslate nohighlight">\(\le\)</span>, <span class="math notranslate nohighlight">\(&lt;\)</span>, and <span class="math notranslate nohighlight">\(=\)</span> satisfy (assume the relations are defined on the natural numbers <span class="math notranslate nohighlight">\(\mathbb{N}\)</span>)?</p></li>
+<li><p>What properties does the “better-than” relation satisfy?</p></li>
+<li><p>Give an example of a relation <span class="math notranslate nohighlight">\(R\)</span> that is not reflexive and not irreflexive.</p></li>
+<li><p>Prove that a relation <span class="math notranslate nohighlight">\(R\)</span> is  transitive and aysmmetric if and only if <span class="math notranslate nohighlight">\(R\)</span> is irreflexive.</p></li>
+<li><p>Suppose that <span class="math notranslate nohighlight">\(X\)</span> has three elements (i.e., <span class="math notranslate nohighlight">\(X=\{a, b, c\}\)</span>.  How many cycles can be formed using all the  elements of <span class="math notranslate nohighlight">\(X\)</span>?</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./mathematical-background"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="sets.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Sets</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="functions.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Functions</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Eric Pacuit<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
